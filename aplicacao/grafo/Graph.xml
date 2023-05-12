@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?><PROJETO>
+<NOME>Ferramenta UniversoI</NOME>
+<CENARIO>
+<TITULO ID="elicitar os requisitos">Elicitar Os Requisitos</TITULO>
+<OBJETIVO><SENTENCA><TEXTO>Descobrir os requisitos a partir das fontes de informação do universo de informação.</TEXTO><REFERENCIA TO="fontes de informacao">fontes de informação</REFERENCIA><REFERENCIA TO="universo de informacao">universo de informação</REFERENCIA></SENTENCA></OBJETIVO>
+<CONTEXTO><SENTENCA><TEXTO>Os engenheiros de requisitos podem estar reunidos ou não, o grafo de influências a matriz de seleção e lista de rastros devem ter sido criados.</TEXTO><REFERENCIA TO="grafo de influencias">grafo de influências</REFERENCIA><REFERENCIA TO="matriz de selecao">matriz de seleção</REFERENCIA></SENTENCA></CONTEXTO>
+<ATORES><SENTENCA><TEXTO>engenheiros de requisitos, engenheiros de requisitos chefe</TEXTO></SENTENCA></ATORES>
+<RECURSOS><SENTENCA><TEXTO>grafo de influências, matriz de seleção,  lista de rastros, fontes de informação, estratégia de elicitação</TEXTO><REFERENCIA TO="grafo de influencias">grafo de influências</REFERENCIA><REFERENCIA TO="matriz de selecao">matriz de seleção</REFERENCIA><REFERENCIA TO="fontes de informacao">fontes de informação</REFERENCIA><REFERENCIA TO="estrategia de elicitacao">estratégia de elicitação</REFERENCIA></SENTENCA></RECURSOS>
+<EPISODIOS><SENTENCA><TEXTO>Os engenheiros de requisitos são alocados às fontes de informação do grafo de influências.
+Os requisitos são elicitadas em cada fonte de informação usando a estratégia de elicitação.
+Uma lista de requisitos é produzida para cada fonte de informação. 
+</TEXTO><REFERENCIA TO="fontes de informacao">fontes de informação</REFERENCIA><REFERENCIA TO="grafo de influencias">grafo de influências</REFERENCIA><REFERENCIA TO="estrategia de elicitacao">estratégia de elicitação</REFERENCIA></SENTENCA></EPISODIOS>
+<EXCECAO><SENTENCA></SENTENCA></EXCECAO>
+</CENARIO>
+<CENARIO>
+<TITULO ID="identificar fontes de informacao">Identificar Fontes De Informação</TITULO>
+<OBJETIVO><SENTENCA><TEXTO>Descobrir as fontes de informação que serão o alvo das estratégias de elicitação.</TEXTO><REFERENCIA TO="fontes de informacao">fontes de informação</REFERENCIA></SENTENCA></OBJETIVO>
+<CONTEXTO><SENTENCA><TEXTO>Um ponto de partida foi selecionado</TEXTO><REFERENCIA TO="ponto de partida">ponto de partida</REFERENCIA></SENTENCA></CONTEXTO>
+<ATORES><SENTENCA><TEXTO> ponto de partida</TEXTO><REFERENCIA TO="ponto de partida">ponto de partida</REFERENCIA></SENTENCA></ATORES>
+<RECURSOS><SENTENCA><TEXTO>engenheiros de requisitos, engenheiro de requisitos consolidador, ferramenta</TEXTO><REFERENCIA TO="engenheiro de requisitos">engenheiro de requisitos</REFERENCIA></SENTENCA></RECURSOS>
+<EPISODIOS><SENTENCA><TEXTO>#Os engenheiros de requisitos identificam a fonte de informação no ponto de partida.
+Os engenheiros de requisitos anotam o rastro da fonte de informação e adicionam a fonte de informação em sua própria lista.
+SE uma fonte de informação com mesmo nome e rastro já foi adicionada ENTÃO a ferramenta emite uma mensagem impedindo a inclusão da fonte  FIMSE.#
+</TEXTO><REFERENCIA TO="ponto de partida">ponto de partida</REFERENCIA><REFERENCIA TO="rastro de fonte de informacao">rastro</REFERENCIA><REFERENCIA TO="propria lista">própria lista</REFERENCIA></SENTENCA></EPISODIOS>
+<EXCECAO><SENTENCA><TEXTO> Um ponto de partida não foi eleito. (elegerponto de partida)</TEXTO><REFERENCIA TO="ponto de partida">ponto de partida</REFERENCIA><REFERENCIA TO="eleger">eleger</REFERENCIA></SENTENCA></EXCECAO>
+</CENARIO>
+<CENARIO>
+<TITULO ID="ranquear fontes de informacao">Ranquear Fontes De Informação</TITULO>
+<OBJETIVO><SENTENCA><TEXTO>Criar um ranking baseado em atributos não-funcionais das fontes informação</TEXTO><REFERENCIA TO="ranking">ranking</REFERENCIA><REFERENCIA TO="atributos nao-funcionais">atributos não-funcionais</REFERENCIA><REFERENCIA TO="fontes de informacao">fontes</REFERENCIA></SENTENCA></OBJETIVO>
+<CONTEXTO><SENTENCA><TEXTO>

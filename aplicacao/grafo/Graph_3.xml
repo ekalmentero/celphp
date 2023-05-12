@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?><PROJETO>
+<NOME>Padua - Agendador de Reuniões</NOME>
+<CENARIO>
+<TITULO ID="fazer chamada para reuniao.">Fazer Chamada Para Reunião.</TITULO>
+<OBJETIVO><SENTENCA><TEXTO>Disparar a convocação de uma reuniãoa</TEXTO></SENTENCA></OBJETIVO>
+<CONTEXTO><SENTENCA><TEXTO>A convocação deverá ser feita em tempo hábil para completar a negociação entre os participantes.</TEXTO><REFERENCIA TO="negociacao">negociação</REFERENCIA></SENTENCA></CONTEXTO>
+<ATORES><SENTENCA><TEXTO>secretária, participantes.</TEXTO></SENTENCA></ATORES>
+<RECURSOS><SENTENCA><TEXTO>Lista de participantes, data prevista, periodo de tempo previsto, participantes importantes.</TEXTO></SENTENCA></RECURSOS>
+<EPISODIOS><SENTENCA><TEXTO>Fazer a convocação da reunião para todos os participantes da lista de participantes.</TEXTO><REFERENCIA TO="reuniao">reunião</REFERENCIA></SENTENCA></EPISODIOS>
+<EXCECAO><SENTENCA><TEXTO>A convocação pode ser feita pelo iniciador da reunião ou pela secretária que o representa.</TEXTO><REFERENCIA TO="reuniao">reunião</REFERENCIA></SENTENCA></EXCECAO>
+</CENARIO>
+<CENARIO>
+<TITULO ID="lembrar participantes.">Lembrar Participantes.</TITULO>
+<OBJETIVO><SENTENCA><TEXTO>Lembrar os participantes sobre a reunião agendada.rn</TEXTO><REFERENCIA TO="reuniao">reunião</REFERENCIA></SENTENCA></OBJETIVO>
+<CONTEXTO><SENTENCA><TEXTO>Deve acontecer com antecedenia entre 24 e 48 horas da reunião agendada.</TEXTO><REFERENCIA TO="reuniao">reunião</REFERENCIA></SENTENCA></CONTEXTO>
+<ATORES><SENTENCA><TEXTO>secretária e participantes.</TEXTO></SENTENCA></ATORES>
+<RECURSOS><SENTENCA><TEXTO>não há.</TEXTO></SENTENCA></RECURSOS>
+<EPISODIOS><SENTENCA><TEXTO>não há.</TEXTO></SENTENCA></EPISODIOS>
+<EXCECAO><SENTENCA><TEXTO>O episódio não acontecerá se não houver a antecedenia entre 24 e 48 horas da reunião agendada.</TEXTO><REFERENCIA TO="reuniao">reunião</REFERENCIA></SENTENCA></EXCECAO>
+</CENARIO>
+<CENARIO>
+<TITULO ID="retornar chamada da reuniao.">Retornar Chamada Da Reunião.</TITULO>
+<OBJETIVO><SENTENCA><TEXTO>Fornecimento da notificaçã de presençaa com informações sobre conjunt de exclusãoa e conjunto de preferencias do participantea</TEXTO></SENTENCA></OBJETIVO>
+<CONTEXTO><SENTENCA><TEXTO>Deve acontecer em tempo hábil para a negociação da reuniãoa</TEXTO><REFERENCIA TO="negociacao">negociação</REFERENCIA></SENTENCA></CONTEXTO>
+<ATORES><SENTENCA><TEXTO>participante e secretaria.</TEXTO><REFERENCIA TO="participante">participante</REFERENCIA></SENTENCA></ATORES>
+<RECURSOS><SENTENCA><TEXTO>Não há.</TEXTO></SENTENCA></RECURSOS>
+<EPISODIOS><SENTENCA><TEXTO>Não há.</TEXTO></SENTENCA></EPISODIOS>
+<EXCECAO><SENTENCA><TEXTO>Não há.</TEXTO></SENTENCA></EXCECAO>
+</CENARIO>
+<CENARIO>
+<TITULO ID="requisitar sala de reuniao.">Requisitar Sala De Reunião.</TITULO>
+<OBJETIVO><SENTENCA><TEXTO>Fazer a reserva da sala de reuniãoa</TEXTO></SENTENCA></OBJETIVO>
+<CONTEXTO><SENTENCA><TEXTO>Deve ser feito antes do processo de negociaçãoa</TEXTO></SENTENCA></CONTEXTO>
+<ATORES><SENTENCA><TEXTO>secretaria</TEXTO></SENTENCA></ATORES>
+<RECURSOS><SENTENCA><TEXTO>sala de reunião</TEXTO><REFERENCIA TO="reuniao">reunião</REFERENCIA></SENTENCA></RECURSOS>
+<EPISODIOS><SENTENCA><TEXTO>Não há.</TEXTO></SENTENCA></EPISODIOS>
+<EXCECAO><SENTENCA><TEXTO>Pode não haver sala disponivel na data da reuniãoa</TEXTO></SENTENCA></EXCECAO>
+</CENARIO>
+<CENARIO>
+<TITULO ID="requisitar equipamento necessario.">Requisitar Equipamento Necessario.</TITULO>
+<OBJETIVO><SENTENCA><TEXTO>Fazer a reserva do equipamento para a data da reuniãoa</TEXTO></SENTENCA></OBJETIVO>
+<CONTEXTO><SENTENCA><TEXTO>Deve acontecer em tempo habil, depois da negociação da reuniãoa</TEXTO><REFERENCIA TO="negociacao">negociação</REFERENCIA></SENTENCA></CONTEXTO>
+<ATORES><SENTENCA><TEXTO>secretaria</TEXTO></SENTENCA></ATORES>
+<RECURSOS><SENTENCA><TEXTO>equipamento </TEXTO></SENTENCA></RECURSOS>
+<EPISODIOS><SENTENCA><TEXTO>Não há.</TEXTO></SENTENCA></EPISODIOS>
+<EXCECAO><SENTENCA><TEXTO>Pode não ter o equipamento necessário para a data da reuniãoa</TEXTO></SENTENCA></EXCECAO>
+</CENARIO>
+<CENARIO>
+<TITULO ID="comunicar data da reuniao.">Comunicar Data Da Reunião.</TITULO>
+<OBJETIVO><SENTENCA><TEXTO>Comunicar aos participantes a data da reunião acertada pelo processo de negociaçãoa</TEXTO><REFERENCIA TO="reuniao">reunião</REFERENCIA></SENTENCA></OBJETIVO>
+<CONTEXTO><SENTENCA><TEXTO>Deve ser feito em tempo hábil para atender o deslocamento do participantea</TEXTO></SENTENCA></CONTEXTO>
+<ATORES><SENTENCA><TEXTO>secretaria, participantes.</TEXTO></SENTENCA></ATORES>
+<RECURSOS><SENTENCA><TEXTO>lista de participantes, data da reuniãoa equipamento, sala da reuniãoa </TEXTO></SENTENCA></RECURSOS>
+<EPISODIOS><SENTENCA><TEXTO>Não há.</TEXTO></SENTENCA></EPISODIOS>
+<EXCECAO><SENTENCA><TEXTO>Não há.</TEXTO></SENTENCA></EXCECAO>
+</CENARIO>
+<CENARIO>
+<TITULO ID="organizar uma reuniao">Organizar Uma Reunião</TITULO>
+<OBJETIVO><SENTENCA><TEXTO>Agendar com os participantes uma reuniãoa que satisfaça as preferências de local e data.</TEXTO><REFERENCIA TO="local">local</REFERENCIA></SENTENCA></OBJETIVO>
+<CONTEXTO><SENTENCA><TEXTO>A negociação da reunião deve acontecer em tempo hábil.</TEXTO><REFERENCIA TO="negociacao">negociação</REFERENCIA><REFERENCIA TO="reuniao">reunião</REFERENCIA></SENTENCA></CONTEXTO>
+<ATORES><SENTENCA><TEXTO>iniciado da reuniãoaa participantes, secretária.</TEXTO></SENTENCA></ATORES>
+<RECURSOS><SENTENCA><TEXTO>dat propostaa, locala equipamentos</TEXTO></SENTENCA></RECURSOS>
+<EPISODIOS><SENTENCA><TEXTO>- Iniciador informa a lista de participantes potenciais, os participantes importantes, o interval de datasa, a dat propostaa, o local proposto, o periodo de tempo e os equipamentos necessarios. - O iniciador, ou o representante deste, pode ser a secretária do iniciador, faz a chamada da reunião aos participantes. RESTRIÇÃO a chamada deve ser feita em tempo hábil. - Secretária recebe as notificações de presença do participantea - Secretaria</TEXTO><REFERENCIA TO="local">local</REFERENCIA><REFERENCIA TO="chamada">chamada</REFERENCIA><REFERENCIA TO="reuniao">reunião</REFERENCIA></SENTENCA></EPISODIOS>
+<EXCECAO><SENTENCA></SENTENCA></EXCECAO>
+</CENARIO>
+<LEXICO>
+<NOME_SIMBOLO ID="notificacao de presenca">Notificação De Presença</NOME_SIMBOLO>
+<SINONIMOS><SINONIMO>retorno chamada</SINONIMO></SINONIMOS>
+<NOCAO><SENTENCA><TEXTO>Retorno chamada com informações sobre conjunto de exclusão e conjunto de preferencias do participante.</TEXTO><REFERENCIA TO="chamada">chamada</REFERENCIA><REFERENCIA TO="conjunto de exclusao">conjunto de exclusão</REFERENCIA><REFERENCIA TO="participante">participante</REFERENCIA></SENTENCA></NOCAO>
+<IMPACTO><SENTENCA><TEXTO>conjunto de exclusão afeta a data prevista.
+Conjunto de preferencias afeta a data prevista.</TEXTO><REFERENCIA TO="conjunto de exclusao">conjunto de exclusão</REFERENCIA></SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="negociacao">Negociação</NOME_SIMBOLO>
+<SINONIMOS></SINONIMOS>
+<NOCAO><SENTENCA><TEXTO>Processo para definição da data da reunião e do local da reunião.</TEXTO><REFERENCIA TO="reuniao">reunião</REFERENCIA><REFERENCIA TO="local">local</REFERENCIA></SENTENCA></NOCAO>
+<IMPACTO><SENTENCA><TEXTO>Define a data da reunião.</TEXTO><REFERENCIA TO="reuniao">reunião</REFERENCIA></SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="reuniao">Reunião</NOME_SIMBOLO>
+<SINONIMOS></SINONIMOS>
+<NOCAO><SENTENCA><TEXTO>Encontro de participantes em um local com data pré-escolhida em comum acordo.</TEXTO><REFERENCIA TO="local">local</REFERENCIA></SENTENCA></NOCAO>
+<IMPACTO><SENTENCA><TEXTO>Impacto: Alteração no local ou na data provocará o inicio das negociações da reunião. </TEXTO><REFERENCIA TO="local">local</REFERENCIA></SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="participante">Participante</NOME_SIMBOLO>
+<SINONIMOS></SINONIMOS>
+<NOCAO><SENTENCA><TEXTO>Pessoa convidada para participar da reunião.</TEXTO><REFERENCIA TO="reuniao">reunião</REFERENCIA></SENTENCA></NOCAO>
+<IMPACTO><SENTENCA><TEXTO>

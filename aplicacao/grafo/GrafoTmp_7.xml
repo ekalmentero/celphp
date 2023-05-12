@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='ISO-8859-1' ?>
+<projeto>
+<nome>testando</nome>
+<cenario>
+<titulo id="alugar livro (parenteses)">Alugar Livro (parenteses)</titulo>
+<objetivo><sentenca><texto>Alugar um </texto><texto referencia_lexico="livro">livro</texto></sentenca><PT/></objetivo>
+<contexto><sentenca><texto>teste</texto></sentenca><PT/></contexto>
+<atores><sentenca><texto>teste</texto></sentenca><PT/></atores>
+<recursos><sentenca><texto>teste</texto></sentenca><PT/></recursos>
+<episodios><sentenca><texto>teste</texto></sentenca><PT/></episodios>
+<excecao><sentenca><texto>teste</texto></sentenca><PT/></excecao>
+</cenario>
+<cenario>
+<titulo id="devolver livro (com parentesis-e-tracos)">Devolver Livro (com Parentesis-e-traços)</titulo>
+<objetivo><sentenca><texto>teste</texto></sentenca><PT/></objetivo>
+<contexto><sentenca><texto>teste</texto></sentenca><PT/></contexto>
+<atores><sentenca><texto>teste</texto></sentenca><PT/></atores>
+<recursos><sentenca><texto>teste</texto></sentenca><PT/></recursos>
+<episodios><sentenca><texto>teste</texto></sentenca><PT/></episodios>
+<excecao><sentenca><texto>teste</texto></sentenca><PT/></excecao>
+</cenario>
+<lexico>
+<nome_simbolo id="livro"><texto>Livro</texto></nome_simbolo>
+<sinonimos><sinonimo>livros</sinonimo></sinonimos>
+<nocao><sentenca><texto>noção livro 'del'</texto><texto referencia_lexico="a">a</texto><texto> libro</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>impacto livro</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="autor"><texto>Autor</texto></nome_simbolo>
+<sinonimos><sinonimo>au</sinonimo><sinonimo>autora</sinonimo><sinonimo>autores</sinonimo><sinonimo>aut</sinonimo><sinonimo>auto</sinonimo></sinonimos>
+<nocao><sentenca><texto>escreve </texto><texto referencia_lexico="livro">livro</texto> <texto referencia_lexico="livro">livro</texto> <texto referencia_lexico="livro">livro</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>impacto</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="a"><texto>A</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>teste</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>teste</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="biblioteca"><texto>Biblioteca</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Lugar onde ficam os </texto><texto referencia_lexico="livro">livros</texto><texto> escritos pelos </texto><texto referencia_lexico="autor">autores</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>1 - Empresta </texto><texto referencia_lexico="livro">livros</texto><texto> para os </texto><texto referencia_lexico="leitores">leitores</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="leitores"><texto>Leitores</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Leem </texto><texto referencia_lexico="livro">livro</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>1- Pegam </texto><texto referencia_lexico="livro">livro</texto><texto> emprestado na </texto><texto referencia_lexico="biblioteca">biblioteca</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="recepcionista"><texto>Recepcionista</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Trabalha na </texto><texto referencia_lexico="biblioteca">biblioteca</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>1 - Empresta os </texto><texto referencia_lexico="livro">livros</texto><texto> da </texto><texto referencia_lexico="biblioteca">biblioteca</texto><texto> para os </texto><texto referencia_lexico="leitores">leitores</texto>
+<PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="cadeira"><texto>Cadeira</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Serve para os </texto><texto referencia_lexico="leitores">leitores</texto><texto> sentarem</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>1 - Leitor senta na cadeira</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="mesa"><texto>Mesa</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Serve para os </texto><texto referencia_lexico="leitores">leitores</texto><texto> se apoiarem</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>leitor se apoia na mesa</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="revista"><texto>Revista</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Periódico sobre algum assunto</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>Revista é alugada</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="adicinarsimbolo"><texto>Adicinarsimbolo</texto></nome_simbolo>
+<sinonimos><sinonimo>asd</sinonimo></sinonimos>
+<nocao><sentenca><texto>"teste" 'teste'</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>"teste" ´teste´ 'teste'</texto><PT/></sentenca></impacto>
+</lexico>
+</projeto>

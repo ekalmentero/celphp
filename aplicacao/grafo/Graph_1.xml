@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?><PROJETO>
+<NOME>Seguradora Imperial</NOME>
+<LEXICO>
+<NOME_SIMBOLO ID="acidentado">Acidentado</NOME_SIMBOLO>
+<NOCAO><SENTENCA>- pessoa envolvida no acidente, podendo ser um terceiro ou o proprio cliente </SENTENCA></NOCAO>
+<IMPACTO><SENTENCA>- solicita indenizacao
+</SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="custos">Custos</NOME_SIMBOLO>
+<NOCAO><SENTENCA>- valores estimados no orcamento da oficina ou os valores estimados pelo medico em relacao a(s) vitima(s) </SENTENCA></NOCAO>
+<IMPACTO><SENTENCA>- faz parte do calculo da indenizacao</SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="danos materiais">Danos Materiais</NOME_SIMBOLO>
+<NOCAO><SENTENCA>- danos ocorridos com o veiculo assegurado</SENTENCA></NOCAO>
+<IMPACTO><SENTENCA>- faz parte do calculo da indenizacao</SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="danos pessoais">Danos Pessoais</NOME_SIMBOLO>
+<NOCAO><SENTENCA>- danos fisicos (lesoes) ocorridos com o segurado ou com terceiro envolvido no acidente </SENTENCA></NOCAO>
+<IMPACTO><SENTENCA>- faz parte do calculo da indenizacao</SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="medico">Medico</NOME_SIMBOLO>
+<NOCAO><SENTENCA>- profissional envolvido no processo de indenizacao de sinistro para avaliacao dos danos pessoais causados pelo acidente</SENTENCA></NOCAO>
+<IMPACTO><SENTENCA>- examina o acidentado
+- informa danos fisicos do tratamento do acidentado</SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="orcamento">Orcamento</NOME_SIMBOLO>
+<NOCAO><SENTENCA>- documento contendo a especificacao dos danos encontrados no veiculo assegurado e o valor referente aos reparos necessarios </SENTENCA></NOCAO>
+<IMPACTO><SENTENCA>- usado pela seguradora para calculo do valor da indenizacao a ser paga ao segurado
+- verificada pelo agente da seguradora</SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="realizar entrevista">Realizar Entrevista</NOME_SIMBOLO>
+<NOCAO><SENTENCA>- o agente conversa com o segurado, vitima, testemunha e policia para verificacao dos depoimentos sobre o acidente </SENTENCA></NOCAO>
+<IMPACTO><SENTENCA>- avalia veracidade do acidente atraves de entrevistas</SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="programar entrevista">Programar Entrevista</NOME_SIMBOLO>
+<NOCAO><SENTENCA>- o agente marca conversa com o segurado, vitima, testemunhas ou policia </SENTENCA></NOCAO>
+<IMPACTO><SENTENCA>- agente deseja informacoes do acidente
+- agente emite decisao sobre a indenizacao em 35 dias </SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="realizar orcamento">Realizar Orcamento</NOME_SIMBOLO>
+<NOCAO><SENTENCA>- oficina avalia os danos materiais encontrados no veiculo assegurado e atribui valores para reparo dos mesmos</SENTENCA></NOCAO>
+<IMPACTO><SENTENCA>- oficina envia orcamento a seguradora</SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="segurado">Segurado</NOME_SIMBOLO>
+<NOCAO><SENTENCA>- cliente que faz solicitacao de indenizacao</SENTENCA></NOCAO>
+<IMPACTO><SENTENCA>- telefona para corretor
+- preenche solicitacao de indenizacao
+- inicia processo de indenizacao de acidente</SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="solicitacao de seguro">Solicitacao De Seguro</NOME_SIMBOLO>
+<NOCAO><SENTENCA>- pedido de cobertura de acidente por uma apolice</SENTENCA></NOCAO>
+<IMPACTO><SENTENCA>- da partida no processo de cobertura de acidente</SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="solicitar indenizacao">Solicitar Indenizacao</NOME_SIMBOLO>
+<NOCAO><SENTENCA>- pedir a seguradora ressarcimento de danos pessoais ou danos materiais de acidente</SENTENCA></NOCAO>
+<IMPACTO><SENTENCA>- corretor envia solicitacao de indenizacao do acidente a seguradora
+- utilizado devido a danos materiais ou danos pessoais</SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="terceiro">Terceiro</NOME_SIMBOLO>
+<NOCAO><SENTENCA>- pessoa envolvida no acidente e que nao eh cliente </SENTENCA></NOCAO>
+<IMPACTO><SENTENCA>- solicita indenizacao a seguradora
+- agente avalia orcamento de danos pessoais
+</SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="testemunha">Testemunha</NOME_SIMBOLO>
+<NOCAO><SENTENCA>- pessoa que presenciou o acidente e que pode dar informacoes sobre o acidente</SENTENCA></NOCAO>
+<IMPACTO><SENTENCA>- participa de entrevista com o agente</SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="apolice em dia">Apolice Em Dia</NOME_SIMBOLO>
+<NOCAO><SENTENCA>- apolice esta com o pagamento do premio em dia
+</SENTENCA></NOCAO>
+<IMPACTO><SENTENCA>- tem direito a cobertura em caso de acidente</SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="apolice atrasada">Apolice Atrasada</NOME_SIMBOLO>
+<NOCAO><SENTENCA>- apolice esta com o pagamento do premio em debito
+</SENTENCA></NOCAO>
+<IMPACTO><SENTENCA>- nao tem direito a cobertura em caso de acidente</SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="data do acidente">Data Do Acidente</NOME_SIMBOLO>
+<NOCAO><SENTENCA>- dia no qual aconteceu o acidente de uma solicitacao de acidente
+- referencia para contagem do tempo de uma indenizacao </SENTENCA></NOCAO>
+<IMPACTO><SENTENCA>- tem que ser confirmada pela solicitacao de indenizacao</SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="acidente com grande dano">Acidente Com Grande Dano</NOME_SIMBOLO>
+<NOCAO><SENTENCA>- acidente com danos pessoais ou grandes danos materiais (acima de determinado valor)</SENTENCA></NOCAO>
+<IMPACTO><SENTENCA>- deve ter processo de indenizacao rigoroso</SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="custo do acidente">Custo Do Acidente</NOME_SIMBOLO>
+<NOCAO><SENTENCA>- valor do desembolso pela seguradora
+- calculado pelo valor da indenizacao acrescido do custo interno do processamento da indenizacao</SENTENCA></NOCAO>
+<IMPACTO><SENTENCA>- eh considerado alto quando fica maior que 3.500 dolares</SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="segurado satisfeito">Segurado Satisfeito</NOME_SIMBOLO>
+<NOCAO><SENTENCA>- segurado com processo de solicitacao de indenizacao do acidente resolvido nas condicoes que ele espera</SENTENCA></NOCAO>
+<IMPACTO><SENTENCA>- segurado deve fazer renovacao da apolice</SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="oficina credenciada">Oficina Credenciada</NOME_SIMBOLO>
+<NOCAO><SENTENCA>- oficina de preferencia da seguradora</SENTENCA></NOCAO>
+<IMPACTO><SENTENCA>- resolve diretamente com o segurado acidente de pequeno dano
+- escolhida pela conveniencia do segurado
+- valoriza o cliente e deseja preserva-lo</SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="seguradora">Seguradora</NOME_SIMBOLO>
+<NOCAO><SENTENCA>- companhia de seguros de automoveis</SENTENCA></NOCAO>
+<IMPACTO><SENTENCA>- vende apolice de seguro ao cliente
+- responde aos processos de indenizacao de acidente
+- monitora estatistica periodica de preco e qualidade do reparo de danos materiais</SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="locadora">Locadora</NOME_SIMBOLO>
+<NOCAO><SENTENCA>empresa de aluguel de automoveis que mantem contrato com a seguradora</SENTENCA></NOCAO>
+<IMPACTO><SENTENCA>- fornece carro provisorio ao segurado pago pela seguradora</SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="tipo de indenizacao">Tipo De Indenizacao</NOME_SIMBOLO>
+<NOCAO><SENTENCA>- modalidades de cobertura para indenizacao: danos pessoais ou danos materiais
+</SENTENCA></NOCAO>
+<IMPACTO><SENTENCA>- afeta o calculo do desembolso da indenizacao</SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="apolice">Apolice</NOME_SIMBOLO>
+<NOCAO><SENTENCA>- contrato para indenizacao de um cliente segurado em caso de acidente</SENTENCA></NOCAO>
+<IMPACTO><SENTENCA>- cobre danos pessoais e danos materiais
+- pode estar com o pagamento do premio em dia (apolice em dia) ou com o pagamento do premio atrasado (apolice atrasada)</SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="indenizacao de acidente">Indenizacao De Acidente</NOME_SIMBOLO>
+<NOCAO><SENTENCA>- processo composto pela solicitacao do segurado, verificacao do agente, avaliacao do agente e autorizacao da seguradora para pagamento da indenizacao pelo acidente</SENTENCA></NOCAO>
+<IMPACTO><SENTENCA>- leva ate 35 dias para ser liberada
+- deve reduzir as despesas administrativas
+- deve ser rapidamente notificado pelo segurado
+- deve fornecer um carro provisorio de uma locadora</SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="cliente">Cliente</NOME_SIMBOLO>
+<NOCAO><SENTENCA>- pessoa que compra apolice de seguro</SENTENCA></NOCAO>
+<IMPACTO><SENTENCA>- preenche solicitacao de seguro
+- encaminha solicitacao de seguro
+- pede indenizacao em caso de acidente</SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="dano em acidente">Dano Em Acidente</NOME_SIMBOLO>
+<NOCAO><SENTENCA>- danos materiais ou danos pessoais ocorridos em acidente</SENTENCA></NOCAO>
+<IMPACTO><SENTENCA>- verificado pelo agente
+- indenizado pela seguradora </SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="acidente com pequeno dano">Acidente Com Pequeno Dano</NOME_SIMBOLO>
+<NOCAO><SENTENCA>- acidente sem danos pessoais e pequenos danos materiais (abaixo de determinado valor)</SENTENCA></NOCAO>
+<IMPACTO><SENTENCA>- deve ter a indenizacao de acidente agilizada
+- pode ser resolvido pela oficina</SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="avaliar custo">Avaliar Custo</NOME_SIMBOLO>
+<NOCAO><SENTENCA>- agente designado para o caso avalia os custos estimados da(s) vitima(s) com o medico  e os custos estimados no orcamento do reparo do veiculo assegurado com a oficina </SENTENCA></NOCAO>
+<IMPACTO><SENTENCA>- agente pode liberar a indenizacao </SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="designar agente">Designar Agente</NOME_SIMBOLO>
+<NOCAO><SENTENCA>- seguradora indica um agente qualificado para o caso apos receber a notificacao do sinistro</SENTENCA></NOCAO>
+<IMPACTO><SENTENCA>- agente de sinistro eh indicado para o caso
+- processo de indenizacao passa a ter um agente</SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="notificar seguradora">Notificar Seguradora</NOME_SIMBOLO>
+<NOCAO><SENTENCA>- o corretor após receber do segurado a solicitacao de indenizacao, solicita a seguradora, atraves de telefone, e-mail, correio ou pessoalmente a indenizacao</SENTENCA></NOCAO>
+<IMPACTO><SENTENCA>- seguradora recebe solicitacao de indenizacao</SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="pagar indenizacao">Pagar Indenizacao</NOME_SIMBOLO>
+<NOCAO><SENTENCA>- acao realizada pela seguradora quando o cliente ou um terceiro tem direito a indenizacao </SENTENCA></NOCAO>
+<IMPACTO><SENTENCA>- seguradora paga a indenizacao mediante a autorizacao do pagamento pelo agente
+- segurado ou terceiro recebe valor para cobrir os danos materiais e/ou danos pessoais causados pelo acidente   </SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="pagar premio">Pagar Premio</NOME_SIMBOLO>
+<NOCAO><SENTENCA>- acao realizada (mensalmente) pelo segurado para ele ter direito a indenizacao de acidente</SENTENCA></NOCAO>
+<IMPACTO><SENTENCA>- estar com o pagamento do premio em dia eh uma das premissas para a indenizacao </SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="verificar vencimento da apolice">Verificar Vencimento Da Apolice</NOME_SIMBOLO>
+<NOCAO><SENTENCA>- o agente designado para o caso verifica se a apolice esta em dia </SENTENCA></NOCAO>
+<IMPACTO><SENTENCA>- caso vencida o processo eh encerrado
+- caso contrario devera ser verificado quem foi o responsavel pelo acidente para que se identifique se a seguradora imperial eh quem pagara a indenizacao</SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="visitar local do acidente">Visitar Local Do Acidente</NOME_SIMBOLO>
+<NOCAO><SENTENCA>- o agente designado para o caso vai ao local onde ocorreu o acidente para recolher informacoes</SENTENCA></NOCAO>
+<IMPACTO><SENTENCA>- contribui para a verificacao da veracidade do acidente</SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="policia">Policia</NOME_SIMBOLO>
+<NOCAO><SENTENCA>- profissional identificado como policial que podera dar informacoes sobre o acidente </SENTENCA></NOCAO>
+<IMPACTO><SENTENCA>- faz registro policial do acidente
+- participa de entrevista</SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="carro provisorio">Carro Provisorio</NOME_SIMBOLO>
+<NOCAO><SENTENCA>- automovel de uma locadora para substituir automovel do segurado durante indenizacao de acidente</SENTENCA></NOCAO>
+<IMPACTO><SENTENCA>- entregue ao segurado pela locadora
+- produz aumento do custo da indenizacao</SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="pagamento de aluguel">Pagamento De Aluguel</NOME_SIMBOLO>
+<NOCAO><SENTENCA>- valor pago pela seguradora a locadora devido ao aluguel de carro provisorio</SENTENCA></NOCAO>
+<IMPACTO><SENTENCA>- corresponde ao periodo de indenizacao de acidente
+- feito logo apos a conclusao da indenizacao</SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="tratamento medico">Tratamento Medico</NOME_SIMBOLO>
+<NOCAO><SENTENCA>- assistencia medica e hospitalar recebida pelo acidentado ou pelo terceiro</SENTENCA></NOCAO>
+<IMPACTO><SENTENCA>- gera pagamento ao medico
+- eh considerado no calculo custo do acidente</SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="corretor">Corretor</NOME_SIMBOLO>
+<NOCAO><SENTENCA>- vendedor de apolice </SENTENCA></NOCAO>
+<IMPACTO><SENTENCA>- vende apolice de seguro
+- notifica, pelo segurado, a seguradora sobre o inicio de processo de indenizacao de sinistro</SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="veiculo assegurado">Veiculo Assegurado</NOME_SIMBOLO>
+<NOCAO><SENTENCA>- automovel do segurado que pode ter o valor total ou parcialmente ressarcido em caso de acidente</SENTENCA></NOCAO>
+<IMPACTO><SENTENCA>- paga premio 
+- recebe orcamento de danos materiais
+ </SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="oficina">Oficina</NOME_SIMBOLO>
+<NOCAO><SENTENCA>- local onde o veiculo segurado eh levado para realizacao do orcamento e para reparo dos danos materiais</SENTENCA></NOCAO>
+<IMPACTO><SENTENCA>- faz orcamento de danos materiais existentes no veiculo assegurado
+- envia orcamento para a seguradora
+- conserta danos materiais do automovel do segurado
+</SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="conserto">Conserto</NOME_SIMBOLO>
+<NOCAO><SENTENCA>- reparo de danos materiais do automovel assegurado</SENTENCA></NOCAO>
+<IMPACTO><SENTENCA>- executado por oficina
+- demanda reembolso da seguradora</SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="franquia">Franquia</NOME_SIMBOLO>
+<NOCAO><SENTENCA>- valor pago pelo segurado em caso de sinistro</SENTENCA></NOCAO>
+<IMPACTO><SENTENCA>- o valor eh usado pela seguradora para reduzir custos com indenizacao
+- valor minimo de um processo de indenizacao</SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="premio">Premio</NOME_SIMBOLO>
+<NOCAO><SENTENCA>- valor do financiamento da apolice do seguro</SENTENCA></NOCAO>
+<IMPACTO><SENTENCA>- pago mensalmente pelo segurado
+- pagamento atrasado perde direito a indenizacao</SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="acidente">Acidente</NOME_SIMBOLO>
+<NOCAO><SENTENCA>- fato onde ocorrem danos pessoais com o cliente ou com terceiro e/ou danos materiais com o veiculo assegurado</SENTENCA></NOCAO>
+<IMPACTO><SENTENCA>- eh comprovado atraves dos seguintes atributos: data do acidente e local do acidente
+- pode ser classificado como acidente com pequeno dano ou como acidente com grande dano</SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="solicitacao de indenizacao">Solicitacao De Indenizacao</NOME_SIMBOLO>
+<NOCAO><SENTENCA>- documento preenchido pelo cliente e entregue ao corretor quando ocorre um acidente</SENTENCA></NOCAO>
+<IMPACTO><SENTENCA>- enviado a seguradora pelo corretor para solicitacao de indenizacao do acidente
+- utilizado devido a danos materiais ou danos pessoais
+</SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="solidificar relacionamento">Solidificar Relacionamento</NOME_SIMBOLO>
+<NOCAO><SENTENCA>- implementar relacionamento de confianca com o cliente segurado
+</SENTENCA></NOCAO>
+<IMPACTO><SENTENCA>- segurado fica confiante e satisfeito com a seguradora</SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="evitar conflito">Evitar Conflito</NOME_SIMBOLO>
+<NOCAO><SENTENCA>- evitar conflito judicial com cliente segurado</SENTENCA></NOCAO>
+<IMPACTO><SENTENCA>- segurado fica confiante e satisfeito com a seguradora</SENTENCA></IMPACTO>
+</LEXICO>
+<LEXICO>
+<NOME_SIMBOLO ID="indenizacao">Indenizacao</NOME_SIMBOLO>
+<NOCAO><SENTENCA>- valor pago pela seguradora por danos pessoais ou danos materiais em bens de uma apolice  </SENTENCA></NOCAO>
+<IMPACTO><SENTENCA>- faz o ressarcimento do cliente segurado
+- eh influenciado no calculo pelo tipo de indenizacao</SENTENCA></IMPACTO>
+</LEXICO>
+</PROJETO>

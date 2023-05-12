@@ -1,0 +1,638 @@
+<?xml version='1.0' encoding='ISO-8859-1' ?>
+<projeto>
+<nome>Ferramenta UniversoI</nome>
+<cenario>
+<titulo id="elicitar os requisitos">Elicitar Os Requisitos</titulo>
+<objetivo><sentenca><texto>Descobrir os requisitos a partir das </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto> do </texto><texto referencia_lexico="universo de informacao">universo de informação</texto><texto>.</texto></sentenca><PT/></objetivo>
+<contexto><sentenca><texto>Os engenheiros de requisitos podem estar reunidos ou não, o </texto><texto referencia_lexico="grafo de influencias">grafo de influências</texto><texto> a </texto><texto referencia_lexico="matriz de selecao">matriz de seleção</texto><texto> e lista de rastros devem ter sido criados.</texto></sentenca><PT/></contexto>
+<atores><sentenca><texto>engenheiros de requisitos, engenheiros de requisitos chefe</texto></sentenca><PT/></atores>
+<recursos><sentenca><texto referencia_lexico="grafo de influencias">grafo de influências</texto><texto>, </texto><texto referencia_lexico="matriz de selecao">matriz de seleção</texto><texto>,  lista de rastros, </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto>, </texto><texto referencia_lexico="estrategia de elicitacao">estratégia de elicitação</texto></sentenca><PT/></recursos>
+<episodios><sentenca><texto>Os engenheiros de requisitos são alocados às </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto> do </texto><texto referencia_lexico="grafo de influencias">grafo de influências</texto><texto>.
+Os requisitos são elicitadas em cada fonte de informação usando a </texto><texto referencia_lexico="estrategia de elicitacao">estratégia de elicitação</texto><texto>.
+Uma lista de requisitos é produzida para cada fonte de informação. 
+</texto></sentenca><PT/></episodios>
+<excecao><sentenca></sentenca><PT/></excecao>
+</cenario>
+<cenario>
+<titulo id="identificar fontes de informacao">Identificar Fontes De Informação</titulo>
+<objetivo><sentenca><texto>Descobrir as </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto> que serão o alvo das estratégias de elicitação.</texto></sentenca><PT/></objetivo>
+<contexto><sentenca><texto>Um </texto><texto referencia_lexico="ponto de partida">ponto de partida</texto><texto> foi selecionado</texto></sentenca><PT/></contexto>
+<atores><sentenca><texto referencia_lexico="ponto de partida">ponto de partida</texto> </sentenca><PT/></atores>
+<recursos><sentenca><texto>engenheiros de requisitos, </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> consolidador, ferramenta</texto></sentenca><PT/></recursos>
+<episodios><sentenca><texto>#Os engenheiros de requisitos identificam a fonte de informação no </texto><texto referencia_lexico="ponto de partida">ponto de partida</texto><texto>.
+Os engenheiros de requisitos anotam o </texto><texto referencia_lexico="rastro de fonte de informacao">rastro</texto><texto> da fonte de informação e adicionam a fonte de informação em sua </texto><texto referencia_lexico="propria lista">própria lista</texto><texto>.
+SE uma fonte de informação com mesmo nome e </texto><texto referencia_lexico="rastro de fonte de informacao">rastro</texto><texto> já foi adicionada ENTÃO a ferramenta emite uma mensagem impedindo a inclusão da fonte  FIMSE.#
+</texto></sentenca><PT/></episodios>
+<excecao><sentenca><texto>Um </texto><texto referencia_lexico="ponto de partida">ponto de partida</texto><texto> não foi eleito. (</texto><texto referencia_lexico="eleger">eleger</texto> <texto referencia_lexico="ponto de partida">ponto de partida</texto><texto>)</texto></sentenca><PT/></excecao>
+</cenario>
+<cenario>
+<titulo id="ranquear fontes de informacao">Ranquear Fontes De Informação</titulo>
+<objetivo><sentenca><texto>Criar um </texto><texto referencia_lexico="ranking">ranking</texto><texto> baseado em </texto><texto referencia_lexico="atributos nao-funcionais">atributos não-funcionais</texto><texto> das </texto><texto referencia_lexico="fontes de informacao">fontes</texto><texto> informação</texto></sentenca><PT/></objetivo>
+<contexto><sentenca><texto>As </texto><texto referencia_lexico="fontes de informacao"><a title="Léxico" href="main.php?t=l&id=4729">fontes</texto><texto> de informação</a> devem ter sido identificadas e consolidadas no </texto><texto referencia_lexico="grafo de influencias">grafo de influências</texto><texto>, as estratégias de elicitação foram escolhidas, as </texto><texto referencia_lexico="fontes de informacao">fontes</texto><texto> recebram as notas relativos aos critérios de relevância, prioridade e custo; os engenheiros de requisitos estão reunidos e o </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> consolidador está operando a ferramenta. </texto></sentenca><PT/></contexto>
+<atores><sentenca><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> consolidador</texto></sentenca><PT/></atores>
+<recursos><sentenca><texto referencia_lexico="selecao multi-criterio">seleção multi-critério</texto><texto>,  </texto><texto referencia_lexico="atributos nao-funcionais">atributos não-funcionais</texto><texto>, </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto>, </texto><texto referencia_lexico="grafo de influencias">grafo de influências</texto><texto>, </texto><texto referencia_lexico="escala de graus">escala de graus</texto><texto>, ferramenta</texto></sentenca><PT/></recursos>
+<episodios><sentenca></sentenca><PT/></episodios>
+<excecao><sentenca></sentenca><PT/></excecao>
+</cenario>
+<cenario>
+<titulo id="construir o universo de informacao">Construir O Universo De Informação</titulo>
+<objetivo><sentenca><texto>Criar o </texto><texto referencia_lexico="rastro de fonte de informacao">rastro</texto><texto> das </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto>, o </texto><texto referencia_lexico="grafo de influencias">grafo de influências</texto><texto>, e a </texto><texto referencia_lexico="matriz de selecao">matriz de seleção</texto><texto> que irão representar o </texto><texto referencia_lexico="universo de informacao">universo de informação</texto><texto>.</texto></sentenca><PT/></objetivo>
+<contexto><sentenca><texto>Existem elementos no </texto><texto referencia_lexico="universo de informacao">universo de informação</texto><texto> que são candidatos à  </texto><texto referencia_lexico="ponto de partida">ponto de partida</texto><texto>  e este ainda não foi definido</texto></sentenca><PT/></contexto>
+<atores><sentenca><texto>engenheiros de requisitos, engenheiros de requisitos chefe</texto></sentenca><PT/></atores>
+<recursos><sentenca><texto referencia_lexico="ponto de partida">ponto de partida</texto><texto>, ferramenta</texto></sentenca><PT/></recursos>
+<episodios><sentenca><texto>Os engenheiros de requisitos aplicam o processo de identificação e mapeamento das </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto> em grafos de referência usando a ferramenta cada um.
+O </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> consolidador consolida os grafos de referência criados por cada </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto>, e gera os </texto><texto referencia_lexico="rastro de fonte de informacao">rastro</texto><texto> das </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto>, o </texto><texto referencia_lexico="grafo de influencias">grafo de influências</texto><texto>, e a </texto><texto referencia_lexico="matriz de selecao">matriz de seleção</texto><texto> utilizando a ferramenta em </texto><texto referencia_lexico="encontro">reunião</texto><texto> com outro engenheiros
+</texto></sentenca><PT/></episodios>
+<excecao><sentenca></sentenca><PT/></excecao>
+</cenario>
+<cenario>
+<titulo id="eleger ponto de partida">Eleger Ponto De Partida</titulo>
+<objetivo><sentenca><texto referencia_lexico="eleger">eleger</texto><texto> um </texto><texto referencia_lexico="ponto de partida">ponto de partida</texto><texto> para iniciar a aplicação da estratégia de identificação de </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto>.</texto></sentenca><PT/></objetivo>
+<contexto><sentenca><texto>Existem candidatos a </texto><texto referencia_lexico="ponto de partida">ponto de partida</texto><texto>, que são </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto> do tipo documento o parte interessada.</texto></sentenca><PT/></contexto>
+<atores><sentenca><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto> candidatos a </texto><texto referencia_lexico="ponto de partida">ponto de partida</texto></sentenca><PT/></atores>
+<recursos><sentenca><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto>, engenheiros de requisitos consolidador</texto></sentenca><PT/></recursos>
+<episodios><sentenca><texto>Os engenheiros de requisitos e os engenheiros de requisitos chefe avaliam </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto> que são possíveis pontos de partida
+Os engenheiros de requisitos e os engenheiros de requisitos chefe escolhem um </texto><texto referencia_lexico="ponto de partida">ponto de partida</texto><texto> por consenso
+</texto></sentenca><PT/></episodios>
+<excecao><sentenca><texto>Não há uma fonte de informação que possa ser usada como </texto><texto referencia_lexico="ponto de partida">ponto de partida</texto><texto> ( Reavaliar as </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto> ou não executar o processo)
+Os engenheiros de requisitos e os engenheiros de requisitos chefe escolhem um </texto><texto referencia_lexico="ponto de partida">ponto de partida</texto><texto> por consenso.
+</texto></sentenca><PT/></excecao>
+</cenario>
+<cenario>
+<titulo id="conceber grafo de referencia">Conceber Grafo De Referência</titulo>
+<objetivo><sentenca><texto>Cada </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> deve conceber seu próprio </texto><texto referencia_lexico="grafo de referencia">grafo de referência</texto></sentenca><PT/></objetivo>
+<contexto><sentenca><texto>As </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto> que foram mapeadas a partir do </texto><texto referencia_lexico="ponto de partida">ponto de partida</texto><texto> e possíveis </texto><texto referencia_lexico="relacoes">relações</texto><texto>/</texto><texto referencia_lexico="relacoes">associações</texto><texto> que foram identificadas entre estas </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto></sentenca><PT/></contexto>
+<atores><sentenca><texto>engenheiros de requisitos,  </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> consolidador</texto></sentenca><PT/></atores>
+<recursos><sentenca><texto referencia_lexico="selecao das fontes de informacao">seleção das fontes de informação</texto><texto>,  </texto><texto referencia_lexico="relacoes">associações</texto><texto>/</texto><texto referencia_lexico="relacoes">relações</texto><texto>, nós, ligações, ferramenta</texto></sentenca><PT/></recursos>
+<episodios><sentenca><texto>#Cada </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> de identificam uma associação/relação entre um par das </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto> que ele selecionou.
+Cada </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> e/ou </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> consolidador adiciona essa ligação entre os dois nós do </texto><texto referencia_lexico="grafo de referencia">grafo de referência</texto><texto>  que se referem  à duas </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto> distintas da sua </texto><texto referencia_lexico="propria lista">própria lista</texto><texto>.# 
+A ferramenta automaticamente adiciona ao </texto><texto referencia_lexico="grafo de referencia">grafo de referência</texto><texto> a identificação do </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto>.
+</texto></sentenca><PT/></episodios>
+<excecao><sentenca><texto>Um </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> e/ou </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> consolidador avalia que falta uma fonte  de informação(IDENTIFICAR </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto>)</texto></sentenca><PT/></excecao>
+</cenario>
+<cenario>
+<titulo id="consolidar grafo de referencias">Consolidar Grafo De Referências</titulo>
+<objetivo><sentenca><texto referencia_lexico="consolidar o grafo">consolidar</texto><texto> um grafo a partir dos grafos de referência de cada </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto></sentenca><PT/></objetivo>
+<contexto><sentenca><texto>Os grafos de referência foram construídos, os engenheiros de requisitos estão reunidos, o </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> consolidador está operando a ferramenta, existe uma </texto><texto referencia_lexico="política de consenso">política de consenso</texto><texto> entre os engenheiros de requisitos e também com o </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> consolidador.</texto></sentenca><PT/></contexto>
+<atores><sentenca><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> consolidador</texto></sentenca><PT/></atores>
+<recursos><sentenca><texto>grafos de referência, </texto><texto referencia_lexico="política de consenso">política de consenso</texto><texto>, ferramenta</texto></sentenca><PT/></recursos>
+<episodios><sentenca><texto>Os engenheiros de requisitos se reúnem cada um tendo disponibilizada o arquivo da  ferramenta com seu </texto><texto referencia_lexico="grafo de referencia">grafo de referência</texto><texto>.
+SE o </texto><texto referencia_lexico="engenheiro de requisitos"><a title="Léxico" href="main.php?t=l&id=4745">engenheiro</texto><texto> de requisitos</a> consolidador não possuir um arquivo de ferramenta próprio ENTÃO 
+</texto><texto referencia_cenario="criar arquivo de ferramenta">criar arquivo de ferramenta</texto><texto>. 
+</texto><texto referencia_cenario="registrar ponto de partida">registrar ponto de partida</texto><texto>. FIMSE.
+O </texto><texto referencia_lexico="engenheiro de requisitos"><a title="Léxico" href="main.php?t=l&id=4745">engenheiro</texto><texto> de requisitos</a> consolidador carrega os arquivos na ferramenta. 
+#A ferramenta pega um arquivo de ferramenta e adiciona a </texto><texto referencia_lexico="propria lista">própria lista</texto><texto> de </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto> contida neste à uma </texto><texto referencia_lexico="lista de fontes de informacao">lista de <a title="Léxico" href="main.php?t=l&id=4729">fontes de informação</texto><texto></a> .
+#
+A ferramenta exibe a </texto><texto referencia_lexico="lista de fontes de informacao">lista de <a title="Léxico" href="main.php?t=l&id=4729">fontes de informação</texto><texto></a>. 
+SE o </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro</texto><texto> chefe decidir </texto><texto referencia_lexico="consolidar o grafo">consolidar</texto><texto> a </texto><texto referencia_lexico="lista de fontes de informacao">lista de <a title="Léxico" href="main.php?t=l&id=4729">fontes de informação</texto><texto></a>  ENTÃO ele aciona a opção </texto><texto referencia_lexico="consolidar o grafo">consolidar</texto><texto>.
+A ferramenta exibe a </texto><texto referencia_lexico="lista de fontes de informacao">lista de <a title="Léxico" href="main.php?t=l&id=4729">fontes de informação</texto><texto></a> e uma opção de DexPara.
+#Cada fonte de informação recebe ou não uma a fonte de destino.#
+O </texto><texto referencia_lexico="engenheiro de requisitos"><a title="Léxico" href="main.php?t=l&id=4745">engenheiro</texto><texto> de requisitos</a> consolidador aciona uma opção de </texto><texto referencia_lexico="consolidar o grafo">consolidar</texto><texto> e a ferramenta faz uma consolidação automática das </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto>   e suas </texto><texto referencia_lexico="relacoes">associações</texto><texto> /</texto><texto referencia_lexico="relacoes">relações</texto><texto> também são consolidadas automaticamente.
+A ferramenta cria uma </texto><texto referencia_lexico="matriz de selecao">matriz de seleção</texto><texto> sem graus com as </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto> que estão presentes no grafo.
+A ferramenta cria uma lista de rastros das </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto> que estão presentes no </texto><texto referencia_lexico="grafo consolidado">grafo consolidado</texto><texto>.
+</texto></sentenca><PT/></episodios>
+<excecao><sentenca><texto>As </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto> não possuem o mesmo </texto><texto referencia_lexico="ponto de partida">ponto de partida</texto><texto>.(</texto><texto referencia_lexico="consolidar o grafo">consolidar</texto> <texto referencia_lexico="ponto de partida">ponto de partida</texto><texto>)</texto></sentenca><PT/></excecao>
+</cenario>
+<cenario>
+<titulo id="atribuir graus as fontes">Atribuir Graus Ás Fontes</titulo>
+<objetivo><sentenca><texto>Criar uma </texto><texto referencia_lexico="matriz de selecao">matriz de seleção</texto><texto> baseada nos graus atribuídos a cada fonte de informação.</texto></sentenca><PT/></objetivo>
+<contexto><sentenca><texto>Existe um </texto><texto referencia_lexico="grafo consolidado">grafo consolidado</texto><texto> pelo processo </texto><texto referencia_lexico="consolidar o grafo">consolidar</texto><texto>, existem escalas de graus que se referem a um critério não-funcional cada uma e existe uma </texto><texto referencia_lexico="política de consenso">política de consenso</texto><texto>.</texto></sentenca><PT/></contexto>
+<atores><sentenca><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> consolidador</texto></sentenca><PT/></atores>
+<recursos><sentenca><texto referencia_lexico="escala de graus">escala de graus</texto><texto>, </texto><texto referencia_lexico="grafo consolidado">grafo consolidado</texto><texto>, </texto><texto referencia_lexico="política de consenso">política de consenso</texto><texto>, ferramenta, </texto><texto referencia_lexico="no">nó</texto> </sentenca><PT/></recursos>
+<episodios><sentenca><texto>#O </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> consolidador e os engenheiros de requisitos através de uma </texto><texto referencia_lexico="política de consenso">política de consenso</texto><texto> decidem qual </texto><texto referencia_lexico="grau">grau</texto><texto> irão </texto><texto referencia_lexico="atribuir">atribuir</texto><texto> a uma fonte de informação do </texto><texto referencia_lexico="grafo consolidado">grafo consolidado</texto><texto>, para um atributo não-funcional .
+O </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> consolidador registra o </texto><texto referencia_lexico="grau">grau</texto><texto> atribuído na ferramenta, selecionando o </texto><texto referencia_lexico="no">nó</texto><texto> no </texto><texto referencia_lexico="grafo consolidado">grafo consolidado</texto><texto> representando a fonte de informação.#
+</texto></sentenca><PT/></episodios>
+<excecao><sentenca></sentenca><PT/></excecao>
+</cenario>
+<cenario>
+<titulo id="eleger estrategias de elicitacao">Eleger Estratégias De Elicitação</titulo>
+<objetivo><sentenca><texto>Para cada fonte de informação escolher um conjunto de um conjunto de técnicas as de elicitação que irão compor uma </texto><texto referencia_lexico="estrategia de elicitacao">estratégia de elicitação</texto><texto> a ser aplicada na mesma.</texto></sentenca><PT/></objetivo>
+<contexto><sentenca><texto>Um </texto><texto referencia_lexico="grafo consolidado">grafo consolidado</texto><texto> a partir dos grafos de referência já foi criado e os engenheiros de requisitos estão reunidos.</texto></sentenca><PT/></contexto>
+<atores><sentenca><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> consolidador</texto></sentenca><PT/></atores>
+<recursos><sentenca><texto referencia_lexico="grafo de referencia">grafo de referência</texto><texto> , técnicas de elicitação</texto></sentenca><PT/></recursos>
+<episodios><sentenca><texto>#O </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> consolidador e os engenheiros de requisitos através de uma </texto><texto referencia_lexico="política de consenso">política de consenso</texto><texto> decidem qual conjunto de técnicas de elicitação irão escolher para uma fonte de informação do </texto><texto referencia_lexico="grafo consolidado">grafo consolidado</texto><texto>,  .
+O </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> consolidador registra a </texto><texto referencia_lexico="estrategia de elicitacao">estratégia de elicitação</texto><texto> na ferramenta, selecionando o </texto><texto referencia_lexico="no">nó</texto><texto> no </texto><texto referencia_lexico="grafo consolidado">grafo consolidado</texto><texto> que representa a fonte de informação sendo analisada.#
+</texto></sentenca><PT/></episodios>
+<excecao><sentenca></sentenca><PT/></excecao>
+</cenario>
+<cenario>
+<titulo id="elicitar informacao para cada no">Elicitar Informação Para Cada Nó</titulo>
+<objetivo><sentenca><texto>Os engenheiros de requisitos encarregados da definição dos requisitos irão </texto><texto referencia_lexico="elicitar requisitos">elicitar</texto><texto> os requisitos em cada fonte de informação (</texto><texto referencia_lexico="no">nó</texto><texto> do </texto><texto referencia_lexico="grafo de influencias">grafo de influências</texto><texto>) usando a estratégias de elicitação que foi criada para este.</texto></sentenca><PT/></objetivo>
+<contexto><sentenca><texto>O </texto><texto referencia_lexico="grafo de influencias">grafo de influências</texto><texto> foi construído, existe uma lista de rastros de </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto> e uma matriz de </texto><texto referencia_lexico="selecao das fontes de informacao">seleção das <a title="Léxico" href="main.php?t=l&id=4729">fontes de informação</texto><texto></a> na ordem que serão elicitadas.</texto></sentenca><PT/></contexto>
+<atores><sentenca><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> consolidador</texto></sentenca><PT/></atores>
+<recursos><sentenca><texto referencia_lexico="matriz de selecao">matriz de seleção</texto><texto>, </texto><texto referencia_lexico="grafo de influencias">grafo de influências</texto><texto>, listas de rastros de </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto></sentenca><PT/></recursos>
+<episodios><sentenca><texto>O </texto><texto referencia_lexico="engenheiro de requisitos"><a title="Léxico" href="main.php?t=l&id=4745">engenheiro</texto><texto> de requisitos</a> consolidador e os engenheiros de requisitos  analisam a </texto><texto referencia_lexico="matriz de selecao">matriz de seleção</texto><texto> para saber em que ordem as </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto> serão elicitadas e a </texto><texto referencia_lexico="estrategia de elicitacao">estratégia de elicitação</texto><texto> que será usada
+#Aloca-se uma fonte de informação à cada </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro</texto><texto> que utilizará a </texto><texto referencia_lexico="estrategia de elicitacao">estratégia de elicitação</texto><texto> para cada fonte de informação como está na </texto><texto referencia_lexico="matriz de selecao">matriz de seleção</texto><texto>.#
+</texto></sentenca><PT/></episodios>
+<excecao><sentenca></sentenca><PT/></excecao>
+</cenario>
+<cenario>
+<titulo id="atribuir grau de relevancia a cada fonte de informacao">Atribuir Grau De Relevância A Cada Fonte De Informação</titulo>
+<objetivo><sentenca><texto>Alimentar uma </texto><texto referencia_lexico="matriz de selecao">matriz de seleção</texto><texto>  que utilize os graus de relevância atribuídos a cada fonte de informação.</texto></sentenca><PT/></objetivo>
+<contexto><sentenca><texto>Existe um </texto><texto referencia_lexico="grafo consolidado">grafo consolidado</texto><texto> pelo processo </texto><texto referencia_lexico="consolidar o grafo">consolidar</texto><texto>, existem escalas de graus que se referem a um critério não-funcional cada uma e existe uma </texto><texto referencia_lexico="política de consenso">política de consenso</texto><texto>.</texto></sentenca><PT/></contexto>
+<atores><sentenca><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> consolidador</texto></sentenca><PT/></atores>
+<recursos><sentenca><texto>escala de grausde relevância, </texto><texto referencia_lexico="grafo consolidado">grafo consolidado</texto><texto>, </texto><texto referencia_lexico="política de consenso">política de consenso</texto><texto>, ferramenta, </texto><texto referencia_lexico="no">nó</texto> </sentenca><PT/></recursos>
+<episodios><sentenca><texto> #O </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> consolidador e os engenheiros de requisitos através de uma </texto><texto referencia_lexico="política de consenso">política de consenso</texto><texto> decidem qual </texto><texto referencia_lexico="grau de relevancia"><a title="Léxico" href="main.php?t=l&id=4781">grau</texto><texto> de relevância</a> irão </texto><texto referencia_lexico="atribuir">atribuir</texto><texto> a uma fonte de informação do </texto><texto referencia_lexico="grafo consolidado">grafo consolidado</texto><texto>, para um atributo não-funcional .
+O </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> consolidador registra o </texto><texto referencia_lexico="grau">grau</texto><texto> atribuído na ferramenta, selecionando o </texto><texto referencia_lexico="no">nó</texto><texto> no </texto><texto referencia_lexico="grafo consolidado">grafo consolidado</texto><texto> representando a fonte de informação.#
+</texto></sentenca><PT/></episodios>
+<excecao><sentenca></sentenca><PT/></excecao>
+</cenario>
+<cenario>
+<titulo id="consensar a prioridade da fonte de informacao">Consensar A Prioridade Da Fonte De Informação</titulo>
+<objetivo><sentenca><texto>Alimentar uma </texto><texto referencia_lexico="matriz de selecao">matriz de seleção</texto><texto>  que utilize os graus de prioridade atribuídos a cada fonte de informação.</texto></sentenca><PT/></objetivo>
+<contexto><sentenca><texto>Existe um </texto><texto referencia_lexico="grafo consolidado">grafo consolidado</texto><texto> pelo processo </texto><texto referencia_lexico="consolidar o grafo">consolidar</texto><texto>, existem escalas de graus que se referem a um critério não-funcional cada uma e existe uma </texto><texto referencia_lexico="política de consenso">política de consenso</texto><texto>.</texto></sentenca><PT/></contexto>
+<atores><sentenca><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> consolidador</texto></sentenca><PT/></atores>
+<recursos><sentenca><texto>escala de grausde prioridade, </texto><texto referencia_lexico="grafo consolidado">grafo consolidado</texto><texto>, </texto><texto referencia_lexico="política de consenso">política de consenso</texto><texto>, ferramenta, </texto><texto referencia_lexico="no">nó</texto> </sentenca><PT/></recursos>
+<episodios><sentenca><texto>#O </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> consolidador e os engenheiros de requisitos através de uma </texto><texto referencia_lexico="política de consenso">política de consenso</texto><texto> decidem qual </texto><texto referencia_lexico="grau">grau</texto><texto> de prioridade irão </texto><texto referencia_lexico="atribuir">atribuir</texto><texto> a uma fonte de informação do </texto><texto referencia_lexico="grafo consolidado">grafo consolidado</texto><texto>, para um atributo não-funcional .
+O </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> consolidador registra o </texto><texto referencia_lexico="grau">grau</texto><texto> atribuído na ferramenta, selecionando o </texto><texto referencia_lexico="no">nó</texto><texto> no </texto><texto referencia_lexico="grafo consolidado">grafo consolidado</texto><texto> representando a fonte de informação.#
+</texto></sentenca><PT/></episodios>
+<excecao><sentenca></sentenca><PT/></excecao>
+</cenario>
+<cenario>
+<titulo id="orcar a fonte de informacao">Orçar A Fonte De Informação</titulo>
+<objetivo><sentenca><texto>Alimentar uma </texto><texto referencia_lexico="matriz de selecao">matriz de seleção</texto><texto>  que utilize os graus de custo atribuídos a cada fonte de informação.</texto></sentenca><PT/></objetivo>
+<contexto><sentenca><texto>Existe um </texto><texto referencia_lexico="grafo consolidado">grafo consolidado</texto><texto> pelo processo </texto><texto referencia_lexico="consolidar o grafo">consolidar</texto><texto>, existem escalas de graus de custo que se referem a um critério não-funcional cada uma e existe uma </texto><texto referencia_lexico="política de consenso">política de consenso</texto><texto>.</texto></sentenca><PT/></contexto>
+<atores><sentenca><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> consolidador</texto></sentenca><PT/></atores>
+<recursos><sentenca><texto>escala de grausde custo, </texto><texto referencia_lexico="grafo consolidado">grafo consolidado</texto><texto>, </texto><texto referencia_lexico="política de consenso">política de consenso</texto><texto>, ferramenta, </texto><texto referencia_lexico="no">nó</texto> </sentenca><PT/></recursos>
+<episodios><sentenca><texto>#O </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> consolidador e os engenheiros de requisitos através de uma </texto><texto referencia_lexico="política de consenso">política de consenso</texto><texto> decidem qual </texto><texto referencia_lexico="grau">grau</texto><texto> de custo irão </texto><texto referencia_lexico="atribuir">atribuir</texto><texto> a uma fonte de informação do </texto><texto referencia_lexico="grafo consolidado">grafo consolidado</texto><texto>, para um atributo não-funcional .
+O </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> consolidador registra o </texto><texto referencia_lexico="grau">grau</texto><texto> atribuído na ferramenta, selecionando o </texto><texto referencia_lexico="no">nó</texto><texto> no </texto><texto referencia_lexico="grafo consolidado">grafo consolidado</texto><texto> representando a fonte de informação.#
+</texto></sentenca><PT/></episodios>
+<excecao><sentenca></sentenca><PT/></excecao>
+</cenario>
+<cenario>
+<titulo id="rotular as diferentes partes interessadas">Rotular As Diferentes Partes Interessadas</titulo>
+<objetivo><sentenca><texto>Os engenheiros de requisitos rotulam as diferentes partes interessados no desenvolvimento da  </texto><texto referencia_lexico="solucao de software">solução de software</texto></sentenca><PT/></objetivo>
+<contexto><sentenca><texto>Existem </texto><texto referencia_lexico="partes interessadas">partes interessadas</texto><texto> modeladas no </texto><texto referencia_lexico="grafo de referencia">grafo de referência</texto></sentenca><PT/></contexto>
+<atores><sentenca><texto>engenheiros de requisitos</texto></sentenca><PT/></atores>
+<recursos><sentenca><texto referencia_lexico="partes interessadas">partes interessadas</texto><texto>, rótulos.
+</texto></sentenca><PT/></recursos>
+<episodios><sentenca><texto>#O </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> e/ou o </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> consolidador  irá rotular a fonte de informação no seu </texto><texto referencia_lexico="grafo de referencia">grafo de referência</texto><texto>, como cliente, usuário ou parte interessada de acordo com seu papel no </texto><texto referencia_lexico="universo de informacao">universo de informação</texto><texto>.#</texto></sentenca><PT/></episodios>
+<excecao><sentenca></sentenca><PT/></excecao>
+</cenario>
+<cenario>
+<titulo id="ranquear requisitos">Ranquear Requisitos</titulo>
+<objetivo><sentenca><texto>Os engenheiros de requisitos irão gerar um </texto><texto referencia_lexico="ranking">ranking</texto><texto> dos requisitos após a elicitação.</texto></sentenca><PT/></objetivo>
+<contexto><sentenca><texto>Os requisitos foram elicitados a partir das </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto>.</texto></sentenca><PT/></contexto>
+<atores><sentenca><texto>engenheiros de requisitos</texto></sentenca><PT/></atores>
+<recursos><sentenca><texto referencia_lexico="ranking">ranking</texto><texto> dos requisitos</texto></sentenca><PT/></recursos>
+<episodios><sentenca><texto>Os engenheiros de requisitos criam uma lista dos requisitos que forma elicitados nas </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto>.
+Os engenheiros de requisitos atribuem uma prioridade a cada requisito dessa lista .
+Os engenheiros de requisitos ordenam a lista  pela prioridade gerando um </texto><texto referencia_lexico="ranking">ranking</texto><texto> de requisitos
+</texto></sentenca><PT/></episodios>
+<excecao><sentenca></sentenca><PT/></excecao>
+</cenario>
+<cenario>
+<titulo id="registrar ponto de partida">Registrar Ponto De Partida</titulo>
+<objetivo><sentenca><texto>Um </texto><texto referencia_lexico="ponto de partida">ponto de partida</texto><texto> será registrado no arquivo da ferramenta </texto></sentenca><PT/></objetivo>
+<contexto><sentenca><texto>O </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> ou </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> consolidador  está iniciando a criação da </texto><texto referencia_lexico="propria lista">própria lista</texto><texto> e do </texto><texto referencia_lexico="grafo de referencia">grafo de referência</texto><texto>.</texto></sentenca><PT/></contexto>
+<atores><sentenca><texto>engenheiros de requisitos e </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> consolidador</texto></sentenca><PT/></atores>
+<recursos><sentenca><texto referencia_lexico="ponto de partida">ponto de partida</texto></sentenca><PT/></recursos>
+<episodios><sentenca><texto>O engenheiros de requisitos  e/ou </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> consolidador registra um </texto><texto referencia_lexico="ponto de partida">ponto de partida</texto><texto> no arquivo de ferramenta
+O engenheiros de requisitos  e/ou </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> consolidador adiciona um endereço de internet ou caminho de arquivo que representa o </texto><texto referencia_lexico="ponto de partida">ponto de partida</texto><texto> que será analisada na ferramenta. 
+</texto></sentenca><PT/></episodios>
+<excecao><sentenca></sentenca><PT/></excecao>
+</cenario>
+<cenario>
+<titulo id="criar arquivo de ferramenta">Criar Arquivo De Ferramenta</titulo>
+<objetivo><sentenca><texto>Criar o arquivo de ferramenta que irá guardar os artefatos da aplicação do processo.</texto></sentenca><PT/></objetivo>
+<contexto><sentenca><texto>Um </texto><texto referencia_lexico="ponto de partida">ponto de partida</texto><texto> foi eleito pelos engenheiros de requisitos e pelo </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> consolidador</texto></sentenca><PT/></contexto>
+<atores><sentenca><texto>engenheiros de requisitos ou </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> consolidador</texto></sentenca><PT/></atores>
+<recursos><sentenca><texto>ferramenta</texto></sentenca><PT/></recursos>
+<episodios><sentenca><texto>O </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> e/ou </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> consolidador seleciona a opção novo </texto><texto referencia_lexico="universo de informacao">universo de informação</texto>
+<texto referencia_cenario="registrar ponto de partida">registrar ponto de partida</texto>
+</sentenca><PT/></episodios>
+<excecao><sentenca></sentenca><PT/></excecao>
+</cenario>
+<cenario>
+<titulo id="consolidar ponto de partida">Consolidar Ponto De Partida</titulo>
+<objetivo><sentenca><texto>Fazer com que todos os arquivos de ferramenta tenham o mesmo </texto><texto referencia_lexico="ponto de partida">ponto de partida</texto> </sentenca><PT/></objetivo>
+<contexto><sentenca><texto>Os requisitos foram elicitados a partir das </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto>.</texto></sentenca><PT/></contexto>
+<atores><sentenca><texto>engenheiros de requisitos chefe</texto></sentenca><PT/></atores>
+<recursos><sentenca><texto>Arquivos de ferramenta, pontos de partida</texto></sentenca><PT/></recursos>
+<episodios><sentenca><texto>O </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> consolidador seleciona um </texto><texto referencia_lexico="ponto de partida">ponto de partida</texto><texto> de um dos arquivos para se tornar o </texto><texto referencia_lexico="ponto de partida">ponto de partida</texto><texto>
+A ferramenta adiciona o </texto><texto referencia_lexico="ponto de partida">ponto de partida</texto><texto> ao arquivo de ferramenta que irá </texto><texto referencia_lexico="consolidar o grafo">consolidar</texto><texto> o s grafos.
+</texto></sentenca><PT/></episodios>
+<excecao><sentenca></sentenca><PT/></excecao>
+</cenario>
+<cenario>
+<titulo id="iniciar processo de identificacao de fontes">Iniciar Processo De Identificação De Fontes</titulo>
+<objetivo><sentenca><texto referencia_lexico="eleger">eleger</texto><texto> e registrar um </texto><texto referencia_lexico="ponto de partida">ponto de partida</texto><texto> em arquivo de ferramenta para dar início ao processo</texto></sentenca><PT/></objetivo>
+<contexto><sentenca><texto>Um universo de </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto> tem de ser mapeado.</texto></sentenca><PT/></contexto>
+<atores><sentenca><texto>engenheiros de requisitos e </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> consolidador</texto></sentenca><PT/></atores>
+<recursos><sentenca><texto>ferramenta, </texto><texto referencia_lexico="ponto de partida">ponto de partida</texto></sentenca><PT/></recursos>
+<episodios><sentenca><texto referencia_lexico="eleger">eleger</texto><texto> UM </texto><texto referencia_lexico="ponto de partida">ponto de partida</texto>
+<texto referencia_cenario="criar arquivo de ferramenta">criar arquivo de ferramenta</texto><texto>
+REGISTRAR </texto><texto referencia_lexico="ponto de partida">ponto de partida</texto>
+</sentenca><PT/></episodios>
+<excecao><sentenca><texto>engenheiros de requisitos e </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> consolidador</texto></sentenca><PT/></excecao>
+</cenario>
+<cenario>
+<titulo id="criar um grafo de referencia">Criar Um Grafo De Referência</titulo>
+<objetivo><sentenca><texto>Criar um </texto><texto referencia_lexico="grafo de referencia">grafo de referência</texto><texto> que represente o </texto><texto referencia_lexico="universo de informacao">universo de informação</texto></sentenca><PT/></objetivo>
+<contexto><sentenca><texto>Um universo de </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto> tem de ser mapeado.</texto></sentenca><PT/></contexto>
+<atores><sentenca><texto>engenheiros de requisitos e </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> consolidador</texto></sentenca><PT/></atores>
+<recursos><sentenca><texto>ferramenta, </texto><texto referencia_lexico="ponto de partida">ponto de partida</texto></sentenca><PT/></recursos>
+<episodios><sentenca><texto referencia_cenario="registrar ponto de partida">registrar ponto de partida</texto>
+<texto referencia_cenario="identificar fontes de informacao">identificar fontes de informação</texto>
+<texto referencia_cenario="conceber grafo de referencia">conceber grafo de referência</texto>
+</sentenca><PT/></episodios>
+<excecao><sentenca></sentenca><PT/></excecao>
+</cenario>
+<cenario>
+<titulo id="criar grafo de influencias">Criar Grafo De Influências</titulo>
+<objetivo><sentenca><texto>Criar um </texto><texto referencia_lexico="grafo de influencias">grafo de influências</texto><texto> que represente o </texto><texto referencia_lexico="universo de informacao">universo de informação</texto></sentenca><PT/></objetivo>
+<contexto><sentenca><texto>Os grafos de referência foram criados.</texto></sentenca><PT/></contexto>
+<atores><sentenca><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> consolidador</texto></sentenca><PT/></atores>
+<recursos><sentenca><texto>ferramenta,  grafos de referência
+</texto></sentenca><PT/></recursos>
+<episodios><sentenca><texto referencia_lexico="consolidar o grafo">consolidar</texto><texto> GRAFOS DE REFERÊNCIAS
+</texto><texto referencia_cenario="eleger estrategias de elicitacao">eleger estratégias de elicitação</texto>
+<texto referencia_cenario="atribuir graus as fontes">atribuir graus ás fontes</texto>
+</sentenca><PT/></episodios>
+<excecao><sentenca></sentenca><PT/></excecao>
+</cenario>
+<lexico>
+<nome_simbolo id="elicitar requisitos"><texto>Elicitar Requisitos</texto></nome_simbolo>
+<sinonimos><sinonimo>elicitar</sinonimo></sinonimos>
+<nocao><sentenca><texto>Tarefa realizada pelos engenheiros de requisitos, em geral no início do ciclo de desenvolvimento utilizando uma </texto><texto referencia_lexico="estrategia de elicitacao">estratégia de elicitação</texto><texto>.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>As </texto><texto referencia_lexico="partes interessadas">partes interessadas</texto><texto> são entrevistadas, </texto><texto referencia_lexico="documentos">documentos</texto><texto> são lidos e analisados, </texto><texto referencia_lexico="locais">locais</texto><texto> são visitados e uma lista de requisitos é produzida. </texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="fontes de informacao"><texto>Fontes De Informação</texto></nome_simbolo>
+<sinonimos><sinonimo>fontes de requisitos</sinonimo><sinonimo>fontes</sinonimo></sinonimos>
+<nocao><sentenca><texto referencia_lexico="locais">locais</texto><texto>, </texto><texto referencia_lexico="documentos">documentos</texto><texto>, </texto><texto referencia_lexico="pessoas">pessoas</texto><texto>, etc, a partir de onde os requisitos são elicitados. </texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>É aplicada uma </texto><texto referencia_lexico="estrategia de elicitacao">estratégia de elicitação</texto><texto> nas fontes de informação, são representadas como nós em um grafo</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="estrategia de elicitacao"><texto>Estratégia De Elicitação</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Técnica ou técnicas a serem usadas no </texto><texto referencia_lexico="processo de elicitacao">processo de elicitação</texto><texto> de requisitos</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>É utilizada no </texto><texto referencia_lexico="ponto de partida">ponto de partida</texto><texto> do processo de identificação de </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto>; Uma é atribuída a cada fonte de informação do </texto><texto referencia_lexico="universo de informacao">universo de informação</texto><texto>, está presente no grafo  de influências</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="processo de elicitacao"><texto>Processo De Elicitação</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Todas as atividades do início ao fim da elicitação de requisitos</texto><PT/></sentenca></nocao>
+<impacto><sentenca><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="requisitos com qualidade"><texto>Requisitos Com Qualidade</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Requisitos mais próximos das necessidades das partes  interessados.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>São obtidos pela seleção adequada das </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="engenharia  de requisitos"><texto>Engenharia  De Requisitos</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Disciplina que procura sistematizar o processo de definição de requisitos.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="selecao das fontes de informacao"><texto>Seleção Das Fontes De Informação</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>È feita pelos engenheiros de requisitos aplicando um processo que ao final tem por saída as </texto><texto referencia_lexico="fontes de informacao">fontes</texto><texto> selecionadas. </texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>As </texto><texto referencia_lexico="fontes de informacao">fontes</texto><texto> selecionadas são elicitadas com uma </texto><texto referencia_lexico="estrategia de elicitacao">estratégia de elicitação</texto><texto> que foi escolhida durante o processo</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="pessoas"><texto>Pessoas</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Indivíduos que fazem parte do Universo de informações</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>São modelados dentro do </texto><texto referencia_lexico="universo de informacao">universo de informação</texto><texto> e se relacionarão com a </texto><texto referencia_lexico="solucao de software">solução de software</texto><texto>.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="solucao de software"><texto>Solução De Software</texto></nome_simbolo>
+<sinonimos><sinonimo>software</sinonimo></sinonimos>
+<nocao><sentenca><texto>Um dos produtos finais do processo de desenvolvimento</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>Os requisitos elicitados serão utilizados na implementação da solução de software</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="evolutivo"><texto>Evolutivo</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>A conceitualização representada no </texto><texto referencia_lexico="universo de informacao">universo de informação</texto><texto> não é estática ela evolui. Novas adições de </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto> e redefinições de </texto><texto referencia_lexico="relacoes">associações</texto><texto> podem evoluir o Universo de Informações.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>As mesmas ações que o evoluem o </texto><texto referencia_lexico="universo de informacao">universo de informação</texto><texto> o mantém evoluindo. Ele também pode ser congelado como decisão de desenvolvimento.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="clientes"><texto>Clientes</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Demandante da </texto><texto referencia_lexico="solucao de software">solução de software</texto><texto>.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>É mapeado como fonte de informação no </texto><texto referencia_lexico="universo de informacao">universo de informação</texto><texto> e terá uma </texto><texto referencia_lexico="estrategia de elicitacao">estratégia de elicitação</texto><texto> específica alocada a ela</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="partes interessadas"><texto>Partes Interessadas</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Interessados em geral na </texto><texto referencia_lexico="solucao de software">solução de software</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>É mapeado como fonte de informação no </texto><texto referencia_lexico="universo de informacao">universo de informação</texto><texto> e terá uma </texto><texto referencia_lexico="estrategia de elicitacao">estratégia de elicitação</texto><texto> específica alocada a ela.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="usuarios"><texto>Usuários</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto referencia_lexico="pessoas">pessoas</texto><texto> que irão utilizar a </texto><texto referencia_lexico="solucao de software">solução de software</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>É mapeado como fonte de informação no </texto><texto referencia_lexico="universo de informacao">universo de informação</texto><texto> e terá uma </texto><texto referencia_lexico="estrategia de elicitacao">estratégia de elicitação</texto><texto> específicas alocada a ela</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="documentos"><texto>Documentos</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto> do tipo material de leitura</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>É mapeado como fonte de informação no </texto><texto referencia_lexico="universo de informacao">universo de informação</texto><texto> e terá estratégias de licitação específicas alocadas a elas</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="locais"><texto>Locais</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Podem se tornar </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto> devido aos eventos que ocorrem nestes</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>É mapeado como fonte de informação no </texto><texto referencia_lexico="universo de informacao">universo de informação</texto><texto> e terá estratégias de elicitação específicas alocadas a ela</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="identificacao das fontes de informacao"><texto>Identificação Das Fontes De Informação</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Os engenheiros de requisitos devem executar estas tarefas antes da elicitação de requisitos.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>As </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto> identificadas serão ranqueadas e de acordo com o </texto><texto referencia_lexico="ranking">ranking</texto><texto>, serão alvo da tarefa de elicitação de requisitos.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="engenheiro de requisitos"><texto>Engenheiro De Requisitos</texto></nome_simbolo>
+<sinonimos><sinonimo>engenheiro</sinonimo></sinonimos>
+<nocao><sentenca><texto>Indivíduo que define os requisitos da </texto><texto referencia_lexico="solucao de software">solução de software</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>Ele identifica as </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto> e define as estratégias de elicitação.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="selecao multi-criterio"><texto>Seleção Multi-critério</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Critério de seleção aplicado ao ranqueamento das </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto>.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>Atributos não funcionais influenciam a seleção multi-critério.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="ranking"><texto>Ranking</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Relação priorizada das </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto> a serem elicitadas</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>O ranking é estabelecido pelos engenheiros de requisitos à medida que eles estabelecem as </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto>.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="ranquear"><texto>Ranquear</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>O </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> cria um </texto><texto referencia_lexico="ranking">ranking</texto><texto> das </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto> a serem elicitadas utilizando um critério multi-seleção.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>As </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto> presentes no </texto><texto referencia_lexico="universo de informacao">universo de informação</texto><texto> estão ranqueadas de acordo com um critério multi-seleção</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="atributos nao-funcionais"><texto>Atributos Não-funcionais</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Atributos que não se relacionam diretamente com a funcionalidade que pode estar embutida na fonte de informação .</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>Os atributos não-funcionais influenciam a escolha das </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto> a serem elicitadas.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="estrategia geral"><texto>Estratégia Geral</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Processo como um todo que é adotado no artigo para a identificação das </texto><texto referencia_lexico="fontes de informacao">fontes</texto><texto> de informações.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>O modelo geral que descreve a estratégia de mapeamento de </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="ponto de partida"><texto>Ponto De Partida</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Fonte de informação escolhida pelos engenheiros de requisitos que será utilizada para dar a partida no processo .</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>É selecionada pelos engenheiros de requisitos como ponto de partida.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="pontos de vista"><texto>Pontos De Vista</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Percepção individual de cada </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> sobre o cada fonte de informação e o seu todo </texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>Cada </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> possui seu ponto de vista.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="construir"><texto>Construir</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Processo realizado pelos engenheiros de requisitos antes da elicitação dos requisitos, que se subdivide em 5 sub-atividades. </texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>O produto deste processo são o </texto><texto referencia_lexico="rastro de fonte de informacao">rastro</texto><texto> das </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto>, o </texto><texto referencia_lexico="grafo de influencias">grafo de influências</texto><texto>, e a </texto><texto referencia_lexico="matriz de selecao">matriz de seleção</texto><texto> que irão representar o </texto><texto referencia_lexico="universo de informacao">universo de informação</texto><texto> onde os requisitos serão elicitados..</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="escala de graus"><texto>Escala De Graus</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Escala que possui os possíveis graus de relevância a serem aplicadas a uma fonte de informação.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>Os engenheiros de requisitos utilizam a escala de graus para </texto><texto referencia_lexico="construir">construir</texto><texto> o </texto><texto referencia_lexico="grafo de influencias">grafo de influências</texto><texto> com estratégias de elicitação, a lista de rastros e a </texto><texto referencia_lexico="matriz de selecao">matriz de seleção</texto><texto>.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="grafo de influencias"><texto>Grafo De Influências</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Grafo de </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto> com estratégias de elicitação</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>É construído pelos engenheiros de requisitos utilizando o um processo.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="rastro de fonte de informacao"><texto>Rastro De Fonte De Informação</texto></nome_simbolo>
+<sinonimos><sinonimo>rastro</sinonimo></sinonimos>
+<nocao><sentenca><texto>Rastro que liga a fonte de informação a sua ocorrência no </texto><texto referencia_lexico="ponto de partida">ponto de partida</texto><texto>.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>Os engenheiros de requisitos quando estão buscando candidatos à </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto> no </texto><texto referencia_lexico="ponto de partida">ponto de partida</texto><texto>, devem manter um rastro da ocorrência da fonte no ponto; o processo de </texto><texto referencia_lexico="construir">construir</texto><texto> gera um rastro de </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto> como saída também. </texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="matriz de selecao"><texto>Matriz De Seleção</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Documento chave para que os grupo de engenheiros de requisitos escolha as </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto> a serem usadas no </texto><texto referencia_lexico="processo de elicitacao">processo de elicitação</texto><texto>.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>A matriz de seleção é produzida somente na última etapa do processo CONSTRUÇÃO, ou seja a etapa de </texto><texto referencia_lexico="atribuir grau as fontes">atribuir grau</texto><texto> que atribui graus de uma </texto><texto referencia_lexico="escala de graus">escala de graus</texto><texto> a cada fonte de informação.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="eleicao do ponto de partida"><texto>Eleição Do Ponto De Partida</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Os engenheiros de requisitos elegem o </texto><texto referencia_lexico="ponto de partida">ponto de partida</texto><texto> no início de processo de CONSTRUÇÃO. O </texto><texto referencia_lexico="ponto de partida">ponto de partida</texto><texto> pode ser uma parte interessada ou um documento.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>Uma vez que o </texto><texto referencia_lexico="ponto de partida">ponto de partida</texto><texto> é estabelecido cada </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> irá selecionar a fonte de uma </texto><texto referencia_lexico="lista de fontes de informacao">lista de fontes de informação</texto><texto>.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="estrategia orientada a pontos de vista"><texto>Estratégia Orientada A Pontos De Vista</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Cada </texto><texto referencia_lexico="engenheiro de requisitos"><a title="Léxico" href="main.php?t=l&id=4745">engenheiro</texto><texto> de requisitos</a> possui seu ponto de vista e a estratégia usa os diversos </texto><texto referencia_lexico="pontos de vista">pontos de vista</texto><texto> de cada </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro</texto><texto>.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>Uma vez que a estratégia é orientada a </texto><texto referencia_lexico="pontos de vista">pontos de vista</texto><texto>, é necessária a presença de pelo menos dois </texto><texto referencia_lexico="pontos de vista">pontos de vista</texto><texto>.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="lista de fontes de informacao"><texto>Lista De Fontes De Informação</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Lista feita por cada </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> com todas as </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto> que este encontrou no </texto><texto referencia_lexico="ponto de partida">ponto de partida</texto><texto>.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>A lista de </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto> será utilizada por cada </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> para montar seu próprio </texto><texto referencia_lexico="grafo de referencia">grafo de referência</texto><texto>.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="habilidade"><texto>Habilidade</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Habilidade do </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro</texto><texto> em tarefas relacionadas a requisitos</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>O desempenho da construção do grafo de referências  de </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto> depende da habilidade do </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto>.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="experiencia"><texto>Experiência</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Nível de experiência do </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> na construção do grafo.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>O desempenho da construção do grafo de referências  de </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto> depende da experiência do </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto>.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="propria lista"><texto>Própria Lista</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto referencia_lexico="lista de fontes de informacao">lista de fontes de informação</texto><texto> de cada </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto> <PT/></sentenca></nocao>
+<impacto><sentenca><texto>Cada </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> produz sua própria lista.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="fonte selecionada"><texto>Fonte Selecionada</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Fonte de informação que consta da </texto><texto referencia_lexico="lista de fontes de informacao">lista de fontes de informação</texto><texto> de cada </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto>.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>A informação de </texto><texto referencia_lexico="rastro de fonte de informacao">rastro</texto><texto> deve ser mantida para cada fonte de informação. </texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="desenhar"><texto>Desenhar</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Cada </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> irá conceber seu próprio </texto><texto referencia_lexico="grafo de referencia">grafo de referência</texto><texto> nesta etapa do processo.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>Cada </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro</texto><texto> terá seu </texto><texto referencia_lexico="grafo de referencia">grafo de referência</texto><texto>  baseado no seu ponto de vista, sua </texto><texto referencia_lexico="experiencia">experiência</texto><texto> e suas </texto><texto referencia_lexico="habilidade">habilidade</texto><texto>.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="grafo de referencia"><texto>Grafo De Referência</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Grafos simples de nós e ligações onde os nós são as </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto> e as ligações são as </texto><texto referencia_lexico="relacoes">associações</texto><texto>/</texto><texto referencia_lexico="relacoes">relações</texto><texto> entre as </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto>.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>Os grafos de referências serão fundidos em um único grafo fundido na etapa posterior do processo. </texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="relacoes"><texto>Relações</texto></nome_simbolo>
+<sinonimos><sinonimo>associações</sinonimo></sinonimos>
+<nocao><sentenca><texto>Ligações entre os nós do </texto><texto referencia_lexico="grafo de referencia">grafo de referência</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>Devem refletir uma referência que existe de uma fonte de informação para a outra</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="fontes originais"><texto>Fontes Originais</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>É o </texto><texto referencia_lexico="ponto de partida">ponto de partida</texto><texto> da qual foram descobertas as outras </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto>.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>Os nomes das </texto><texto referencia_lexico="fontes de informacao"><a title="Léxico" href="main.php?t=l&id=4729">fontes</texto><texto> de informação</a> devem preservar os nomes encontrados nas </texto><texto referencia_lexico="fontes de informacao">fontes</texto><texto> originais.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="consolidar o grafo"><texto>Consolidar O Grafo</texto></nome_simbolo>
+<sinonimos><sinonimo>consolidar</sinonimo></sinonimos>
+<nocao><sentenca><texto>O grupo de engenheiros de requisitos se encontra na etapa de CONSOLIDAR para consolidar o grafo a partir dos grafos de referência</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>Um grafo consolidada é produzido utilizando uma </texto><texto referencia_lexico="política de consenso">política de consenso</texto><texto>. </texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="atribuir grau as fontes"><texto>Atribuir Grau Às Fontes</texto></nome_simbolo>
+<sinonimos><sinonimo>atribuir grau</sinonimo></sinonimos>
+<nocao><sentenca><texto>Os engenheiros de requisitos atribuem graus advindos de uma </texto><texto referencia_lexico="escala de graus">escala de graus</texto><texto> às </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto> durante etapa de DAR NOTA ao </texto><texto referencia_lexico="grafo consolidado">grafo consolidado</texto><texto>. </texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>A atribuição de graus às </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto> produz uma </texto><texto referencia_lexico="matriz de selecao">matriz de seleção</texto><texto>.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="encontro"><texto>Encontro</texto></nome_simbolo>
+<sinonimos><sinonimo>reunião</sinonimo></sinonimos>
+<nocao><sentenca><texto>Encontro dos engenheiros de requisitos que produziram cada um seu </texto><texto referencia_lexico="grafo de referencia">grafo de referência</texto><texto>.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>O encontro é uma maneira apropriada de </texto><texto referencia_lexico="consolidar o grafo">consolidar</texto><texto> os grafos de referência.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="política de consenso"><texto>Política De Consenso</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Característica comum a tarefas colaborativas </texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>Os engenheiros de requisitos participantes do </texto><texto referencia_lexico="encontro">encontro</texto><texto> partilham uma política de consenso. </texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="conflito"><texto>Conflito</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Diferença entre </texto><texto referencia_lexico="pontos de vista">pontos de vista</texto><texto> de dois ou mais engenheiros de requisitos. </texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>Os conflitos devem ocorrer e, em geral o mediador deve conduzir os participantes ao consenso.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="grafo consolidado"><texto>Grafo Consolidado</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Grafo obtido depois da aplicação do processo </texto><texto referencia_lexico="consolidar o grafo">consolidar</texto><texto> a partir do grafos de referência. </texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>Este grafo será utilizado no processo </texto><texto referencia_lexico="eleger">eleger</texto> <PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="eleger"><texto>Eleger</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Os engenheiros de requisitos após o processo </texto><texto referencia_lexico="consolidar o grafo">consolidar</texto><texto> elegem quais as estratégias de elicitação serão utilizadas para cada fonte de informação através de consenso. </texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>Após a aplicação de ELEGER teremos o grafo anotado com estratégias de elicitação.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="conhecimento de engenharia de requisitos"><texto>Conhecimento De Engenharia De Requisitos</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Nível de conhecimento que cada </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> agrega ao grupo.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>O processo </texto><texto referencia_lexico="eleger">eleger</texto><texto> utiliza o conhecimento de engenharia de requisitos para apontar quais estratégicas de elicitação devem ser adotadas.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="elicitar informacoes para cada no"><texto>Elicitar Informações Para Cada Nó</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Os engenheiros de requisitos encarregados da definição dos requisitos irão </texto><texto referencia_lexico="elicitar requisitos">elicitar</texto><texto> os requisitos em cada fonte de informação (</texto><texto referencia_lexico="no">nó</texto><texto>) usando as estratégias de elicitação.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>Cada </texto><texto referencia_lexico="no">nó</texto><texto> terá um conjunto de requisitos associados a este.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="gcee"><texto>Gcee</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto referencia_lexico="grafo consolidado">grafo consolidado</texto><texto> contendo das estratégias de elicitação que foram eleitas pelos engenheiros de requisitos para cada </texto><texto referencia_lexico="no">nó</texto><texto>.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>O GcEE será utilizado no processo </texto><texto referencia_lexico="atribuir grau as fontes">atribuir grau</texto><texto>. </texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="classificar"><texto>Classificar</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>A atividade de CLASSIFICAR é executada pelos engenheiros de requisitos e se subdivide em </texto><texto referencia_lexico="atribuir">atribuir</texto><texto>, </texto><texto referencia_lexico="negociar">negociar</texto><texto> e </texto><texto referencia_lexico="orcar">orçar</texto><texto>.  </texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>A atividade de </texto><texto referencia_lexico="atribuir">atribuir</texto><texto> graus produz uma </texto><texto referencia_lexico="matriz de selecao">matriz de seleção</texto><texto>.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="atribuir"><texto>Atribuir</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Cada </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> atribui um </texto><texto referencia_lexico="grau de relevancia">grau de relevância</texto><texto> de uma </texto><texto referencia_lexico="escala de graus">escala de graus</texto><texto> a cada fonte de informação nesta etapa do processo</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>Cada </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro</texto><texto> terá um grafo anotado com os graus de relevância. </texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="grau"><texto>Grau</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Valor que mensura uma fonte de informação de acordo com critério não-funcional e está presente em uma </texto><texto referencia_lexico="escala de graus">escala de graus</texto><texto>.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>È atribuído a cada fonte de infromação</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="grau de relevancia"><texto>Grau De Relevância</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto referencia_lexico="grau">grau</texto><texto> que vai de 1 à 3 e que indica quão relevante uma fonte de informação é para o problema sendo proposto.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>Um </texto><texto referencia_lexico="grau">grau</texto><texto> de relevância é atribuído a cada fonte de informação por cada </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto>.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="negociar"><texto>Negociar</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Os engenheiros de requisitos terão de se reunir em um um </texto><texto referencia_lexico="encontro">encontro</texto><texto> e através do consenso escolher um </texto><texto referencia_lexico="grau">grau</texto><texto> que denota uma prioridade para cada fonte de informação.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>Cada fonte de informação terá uma prioridade associada à mesma.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="escala de prioridades"><texto>Escala De Prioridades</texto></nome_simbolo>
+<sinonimos><sinonimo>escala de notas de prioridade</sinonimo></sinonimos>
+<nocao><sentenca><texto>Escala com valores discretos que vai de 1 à 3 sendo que o valor 1 denota em que o valor 1 denota maior prioridade e  valor 3 menor prioridade.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>Os engenheiros de requisitos escolhem um número da escala de prioridades para cada fonte de informação. </texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="orcar"><texto>Orçar</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Os engenheiros de requisitos devem considerar o quão custoso deve ser </texto><texto referencia_lexico="elicitar requisitos">elicitar</texto><texto> cada fonte de informação após a priorização das mesmas</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>O custo médio para cada fonte de informação será calculado a partir da média dos custos atribuídos a cada fonte de informação por cada </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="escala de custos"><texto>Escala De Custos</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Escala de valores discretos do 1 ao 3 em que o 1 representa o menor custo e o 3 o maior custo .</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>Os engenheiros de requisitos atribuem valores às </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto> a partir da escala de custos.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="rotular diferentes partes interessadas"><texto>Rotular Diferentes Partes Interessadas</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Os engenheiros de requisitos deveriam rotular as diferentes </texto><texto referencia_lexico="partes interessadas">partes interessadas</texto><texto> no desenvolvimento da </texto><texto referencia_lexico="solucao de software">solução de software</texto><texto>. </texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>As diferentes partes interessados </texto><texto referencia_lexico="universo de informacao">universo de informação</texto><texto> passam a ter rótulos</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="conhecimento do domínio"><texto>Conhecimento Do Domínio</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Conhecimento sobre a atividade fim que a </texto><texto referencia_lexico="solucao de software">solução de software</texto><texto> dará apoio.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>O fator mais decisivo para seleção de </texto><texto referencia_lexico="partes interessadas">partes interessadas</texto><texto> que são não-desenvolvedores para atividades de engenharia de requisitos é o conhecimento do domínio.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="centralidade"><texto>Centralidade</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>que leva uma fonte de informação a possuir Centralidade é o fato de esta possuir o um grande número de associação/</texto><texto referencia_lexico="relacoes">relações</texto><texto> com outras </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto>.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>Uma fonte de informação com muita centralidade tende a ter uma maior prioridade para a elicitação.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="ranquear requisitos"><texto>Ranquear Requisitos</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Os </texto><texto referencia_lexico="engenheiro de requisitos">engenheiro de requisitos</texto><texto> devem </texto><texto referencia_lexico="ranquear">ranquear</texto><texto> os requisitos após o </texto><texto referencia_lexico="processo de elicitacao">processo de elicitação</texto><texto> para a implementação da </texto><texto referencia_lexico="solucao de software">solução de software</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>Os requisitos serão implementadas na </texto><texto referencia_lexico="solucao de software">solução de software</texto><texto> a partir do </texto><texto referencia_lexico="ranking">ranking</texto><texto> de requisitos.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="no"><texto>Nó</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Representação da fonte de informação no grafo que representa o </texto><texto referencia_lexico="universo de informacao">universo de informação</texto><texto>.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>Cada nó em geral se associa a outro através de associação/relação.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="universo de informacao"><texto>Universo De Informação</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>contexto geral no qual a </texto><texto referencia_lexico="solucao de software">solução de software</texto><texto> será desenvolvida e operada. No domínio desta solução ele é representado pelos Rastros de </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto>, Grafo das </texto><texto referencia_lexico="fontes de informacao">fontes de informação</texto><texto> com Técnicas de Elicitação, o </texto><texto referencia_lexico="gcee">gcee</texto><texto> que também conhecido como </texto><texto referencia_lexico="grafo de influencias">grafo de influências</texto><texto>, e a  Matriz de </texto><texto referencia_lexico="selecao das fontes de informacao">seleção das <a title="Léxico" href="main.php?t=l&id=4729">fontes de informação</texto><texto></a>.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>É modelado através da identificação de suas </texto><texto referencia_lexico="fontes de informacao">fontes</texto><texto> e da relação entre elas. </texto><PT/></sentenca></impacto>
+</lexico>
+</projeto>

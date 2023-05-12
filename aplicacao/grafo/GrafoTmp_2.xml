@@ -1,0 +1,340 @@
+<?xml version='1.0' encoding='ISO-8859-1' ?>
+<projeto>
+<nome>CONTROLE DO CAIXA DE RESTAURANTE</nome>
+<lexico>
+<nome_simbolo id="abrir a mesa."><texto>Abrir A Mesa.</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>1 - Tarefa realizada pelo </texto><texto referencia_lexico="caixa">caixa</texto><texto>.
+2 - Acontece quando o </texto><texto referencia_lexico="cliente">cliente</texto><texto> senta na </texto><texto referencia_lexico="mesa">mesa</texto><texto> e faz o </texto><texto referencia_lexico="pedido">pedido</texto><texto>.
+3 - O </texto><texto referencia_lexico="caixa">caixa</texto><texto> verifica se a </texto><texto referencia_lexico="mesa esta fechada"><a title="Léxico" href="main.php?t=l&id=3333">mesa</texto><texto> está fechada</a>.
+4 - O </texto><texto referencia_lexico="caixa">caixa</texto><texto> recebe a </texto><texto referencia_lexico="comanda">comanda</texto><texto> e </texto><texto referencia_lexico="botar a comanda no escaninho">bota a <a title="Léxico" href="main.php?t=l&id=3293">comanda</texto><texto> no escaninho.</a> </texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>1 - A </texto><texto referencia_lexico="mesa esta aberta"><a title="Léxico" href="main.php?t=l&id=3333">mesa</texto><texto> está aberta</a>.
+2 - Se a </texto><texto referencia_lexico="mesa esta aberta"><a title="Léxico" href="main.php?t=l&id=3333">mesa</texto><texto> está aberta</a>, o </texto><texto referencia_lexico="caixa">caixa</texto><texto> não pode abrir a </texto><texto referencia_lexico="mesa">mesa</texto><texto>,
+</texto><texto referencia_lexico="caixa">caixa</texto><texto> diz para o </texto><texto referencia_lexico="garcom">garçom</texto><texto>: </texto><texto referencia_lexico="mesa esta aberta"><a title="Léxico" href="main.php?t=l&id=3333">mesa</texto><texto> está aberta</a>.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="bordero"><texto>Bordero</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>1 - É uma tabela que contém a data e a unidade.
+2 - Contém uma lista de </texto><texto referencia_lexico="num. do carimbo">num. do carimbo</texto><texto>, </texto><texto referencia_lexico="num. da mesa">num. da mesa</texto><texto> e quantidade de </texto><texto referencia_lexico="comanda">comandas</texto><texto>.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>1 - Quando o </texto><texto referencia_lexico="caixa">caixa</texto><texto> fecha a </texto><texto referencia_lexico="mesa">mesa</texto><texto> anota o </texto><texto referencia_lexico="num. da mesa">num. da <a title="Léxico" href="main.php?t=l&id=3333">mesa</texto><texto></a> e a quantidade de </texto><texto referencia_lexico="comanda">comandas</texto><texto> no bordero.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="calcular o total"><texto>Calcular O Total</texto></nome_simbolo>
+<sinonimos><sinonimo>calcula o  total,</sinonimo><sinonimo>calcula a soma,</sinonimo></sinonimos>
+<nocao><sentenca><texto>1 - tarefa realizada pelo </texto><texto referencia_lexico="caixa">caixa</texto><texto>.
+2 - acontece quando o </texto><texto referencia_lexico="caixa">caixa</texto> <texto referencia_lexico="fechar a mesa">fecha a mesa.</texto><texto>
+3 - para cada </texto><texto referencia_lexico="comanda">comanda</texto><texto>, o </texto><texto referencia_lexico="caixa">caixa</texto><texto> verifica o </texto><texto referencia_lexico="preco">preço</texto><texto> dos pedidos e adiciona a </texto><texto referencia_lexico="total">soma</texto><texto>.
+4 - se o </texto><texto referencia_lexico="restaurante">restaurante</texto><texto> cobra </texto><texto referencia_lexico="10%">10%</texto><texto> , o </texto><texto referencia_lexico="caixa">caixa</texto><texto> calcula os </texto><texto referencia_lexico="10%">10%</texto><texto> e adiciona a </texto><texto referencia_lexico="total">soma</texto><texto>.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>1 - o </texto><texto referencia_lexico="caixa">caixa</texto><texto> tem a nota.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="canhoto"><texto>Canhoto</texto></nome_simbolo>
+<sinonimos><sinonimo>canhotos.</sinonimo></sinonimos>
+<nocao><sentenca><texto>1 - só existe se o </texto><texto referencia_lexico="restaurante">restaurante</texto><texto> cobra 10%.
+2 - papel onde o </texto><texto referencia_lexico="caixa">caixa</texto><texto> anota os </texto><texto referencia_lexico="10%">10%</texto><texto> no canhoto, quando fecha a </texto><texto referencia_lexico="mesa">mesa</texto><texto>.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>1 - ao final do dia, o </texto><texto referencia_lexico="garcom">garçom</texto><texto> recebe o valor dos canhotos.
+2 - ao final do dia, o valor dos canhotos é dividido pelos </texto><texto referencia_lexico="garcom">garçons</texto><texto>.
+3 - o </texto><texto referencia_lexico="caixa">caixa</texto><texto> anota os </texto><texto referencia_lexico="10%">10%</texto><texto> no canhoto, quando fecha a </texto><texto referencia_lexico="mesa">mesa</texto><texto>.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="comanda"><texto>Comanda</texto></nome_simbolo>
+<sinonimos><sinonimo>comandas</sinonimo></sinonimos>
+<nocao><sentenca><texto>1 - O </texto><texto referencia_lexico="garcom">garçom</texto><texto> anota os pedidos e o </texto><texto referencia_lexico="num. da mesa">num. da mesa</texto><texto> do </texto><texto referencia_lexico="cliente">cliente</texto><texto> na comanda,
+quando o  </texto><texto referencia_lexico="cliente">cliente</texto><texto> faz o </texto><texto referencia_lexico="pedido">pedido</texto><texto>. 
+2 - A comanda contém </texto><texto referencia_lexico="pedido">pedidos.</texto><texto>
+3 - A comanda contém </texto><texto referencia_lexico="num. da mesa">num. da mesa</texto><texto>.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>1 - O </texto><texto referencia_lexico="garcom">garçom</texto><texto> joga a comanda.
+2 - O </texto><texto referencia_lexico="caixa">caixa</texto> <texto referencia_lexico="botar a comanda no escaninho">bota a comanda no <a title="Léxico" href="main.php?t=l&id=3328">escaninho</texto><texto>.</a>
+3 - O </texto><texto referencia_lexico="caixa">caixa</texto> <texto referencia_lexico="retirar comandas do escaninho">retira as comandas</texto><texto> do </texto><texto referencia_lexico="escaninho">escaninho</texto><texto>.
+4 - O </texto><texto referencia_lexico="caixa">caixa</texto><texto> calcula o </texto><texto referencia_lexico="total">total</texto><texto> das comandas
+5 - O </texto><texto referencia_lexico="caixa">caixa</texto><texto> anota o </texto><texto referencia_lexico="pedido">pedido</texto><texto> na comanda, quando o </texto><texto referencia_lexico="cliente">cliente</texto><texto> faz o </texto><texto referencia_lexico="pedido">pedido</texto><texto>.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="controle de caixa"><texto>Controle De Caixa</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>1 - É feito pelo </texto><texto referencia_lexico="caixa">caixa</texto><texto>.
+2 - Compreende </texto><texto referencia_lexico="bordero">bordero</texto><texto>, </texto><texto referencia_lexico="escaninho">escaninho</texto><texto>, </texto><texto referencia_lexico="comanda">comandas</texto><texto>.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>1 - É fiscalizado pelo gerente.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="controle interno"><texto>Controle Interno</texto></nome_simbolo>
+<sinonimos><sinonimo>nota.</sinonimo></sinonimos>
+<nocao><sentenca><texto>1 - Papel onde o </texto><texto referencia_lexico="caixa">caixa</texto><texto> contém o </texto><texto referencia_lexico="total">total</texto><texto> da despesa e o </texto><texto referencia_lexico="num. da mesa">num. da mesa</texto><texto>.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>1 - O </texto><texto referencia_lexico="caixa">caixa</texto><texto> anota o </texto><texto referencia_lexico="total">total</texto><texto> e o </texto><texto referencia_lexico="num. da mesa">num. da <a title="Léxico" href="main.php?t=l&id=3333">mesa</texto><texto></a> na nota, quando fecha a </texto><texto referencia_lexico="mesa">mesa</texto><texto>.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="divisao do escaninho."><texto>Divisão Do Escaninho.</texto></nome_simbolo>
+<sinonimos><sinonimo>divisões.</sinonimo></sinonimos>
+<nocao><sentenca><texto>1 - É um quadrado do </texto><texto referencia_lexico="escaninho">escaninho</texto><texto>, usado para guardar as </texto><texto referencia_lexico="comanda">comandas</texto><texto> referentes a uma das </texto><texto referencia_lexico="mesa">mesa</texto><texto>.
+2 - É identificada por um </texto><texto referencia_lexico="num. da mesa">num. da <a title="Léxico" href="main.php?t=l&id=3333">mesa</texto><texto></a>.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>1 - O </texto><texto referencia_lexico="caixa">caixa</texto><texto> pode botar a </texto><texto referencia_lexico="comanda">comanda</texto><texto> na divisão do </texto><texto referencia_lexico="escaninho">escaninho</texto><texto>.
+2 - O </texto><texto referencia_lexico="caixa">caixa</texto><texto> pode retirar as </texto><texto referencia_lexico="comanda">comandas</texto><texto> da divisão do </texto><texto referencia_lexico="escaninho">escaninho</texto><texto>.
+3 - A divisão do </texto><texto referencia_lexico="escaninho">escaninho</texto><texto> pode estar vazia, </texto><texto referencia_lexico="mesa esta fechada">mesa está fechada</texto><texto>.
+4 - A divisão do </texto><texto referencia_lexico="escaninho">escaninho</texto><texto> pode estar cheia, </texto><texto referencia_lexico="mesa esta aberta">mesa está aberta</texto><texto>.
+5 - A divisão do </texto><texto referencia_lexico="escaninho">escaninho</texto><texto> pode conter </texto><texto referencia_lexico="comanda">comandas</texto><texto>. </texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="entregar o pagamento."><texto>Entregar O Pagamento.</texto></nome_simbolo>
+<sinonimos><sinonimo>paga no caixa.</sinonimo></sinonimos>
+<nocao><sentenca><texto>1 - Tarefa realizada pelo </texto><texto referencia_lexico="garcom">garçom</texto><texto>.
+2 - O </texto><texto referencia_lexico="garcom">garçom</texto><texto> apresenta a nota ao </texto><texto referencia_lexico="cliente">cliente</texto><texto> e recebe </texto><texto referencia_lexico="pagamento">pagamento</texto><texto>.
+3 - O </texto><texto referencia_lexico="garcom">garçom</texto><texto> devolve a nota ao </texto><texto referencia_lexico="caixa">caixa</texto><texto>.
+4 - O </texto><texto referencia_lexico="garcom">garçom</texto><texto> entrega o dinheiro ao </texto><texto referencia_lexico="caixa">caixa</texto><texto>.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>1 - O </texto><texto referencia_lexico="caixa">caixa</texto><texto> deve conferir o </texto><texto referencia_lexico="pagamento">pagamento</texto><texto>.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="10%"><texto>10%</texto></nome_simbolo>
+<sinonimos><sinonimo>gorgeta</sinonimo></sinonimos>
+<nocao><sentenca><texto>1 - Igual a 1/10 do </texto><texto referencia_lexico="total">total</texto><texto>.
+2 - Esta adicionado ao </texto><texto referencia_lexico="total">total</texto><texto> se o </texto><texto referencia_lexico="restaurante">restaurante</texto><texto> cobra 10% .
+</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>1 - Eh anotado no </texto><texto referencia_lexico="canhoto">canhoto</texto><texto>, quando o </texto><texto referencia_lexico="caixa">caixa</texto><texto> fecha a </texto><texto referencia_lexico="mesa">mesa</texto><texto>.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="total"><texto>Total</texto></nome_simbolo>
+<sinonimos><sinonimo>soma</sinonimo></sinonimos>
+<nocao><sentenca><texto> 1 - Somatorio do </texto><texto referencia_lexico="preco">preço</texto><texto> de cada </texto><texto referencia_lexico="pedido">pedido</texto><texto> do </texto><texto referencia_lexico="cliente">cliente</texto><texto>.
+ 2 - Inclui os </texto><texto referencia_lexico="10%">10%</texto><texto> , se o </texto><texto referencia_lexico="restaurante">restaurante</texto><texto> tem </texto><texto referencia_lexico="10%">10%</texto><texto> .</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>1 - O </texto><texto referencia_lexico="caixa">caixa</texto><texto> anota o total na nota, quando </texto><texto referencia_lexico="fechar a mesa">fecha a mesa.</texto><texto>
+2 - Quantia que devera ser paga no </texto><texto referencia_lexico="caixa">caixa</texto><texto>.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="entregar o troco"><texto>Entregar O Troco</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>1 - O </texto><texto referencia_lexico="caixa">caixa</texto><texto> entrega o </texto><texto referencia_lexico="troco">troco</texto><texto> ao garçon, quando o </texto><texto referencia_lexico="caixa">caixa</texto><texto> confere o </texto><texto referencia_lexico="pagamento">pagamento</texto><texto>.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>1 - O garçon deve levar o </texto><texto referencia_lexico="troco">troco</texto><texto> ao </texto><texto referencia_lexico="cliente">cliente</texto><texto>.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="escaninho"><texto>Escaninho</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>1 - Um dos componentes do </texto><texto referencia_lexico="restaurante">restaurante</texto><texto>.
+2 - Contém várias divisões.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>1 - O </texto><texto referencia_lexico="caixa">caixa</texto><texto> bota a </texto><texto referencia_lexico="comanda">comanda</texto><texto> no escaninho, quando recebe a </texto><texto referencia_lexico="comanda">comanda</texto><texto>.
+2 - O </texto><texto referencia_lexico="caixa">caixa</texto> <texto referencia_lexico="retirar comandas do escaninho">retira as comandas</texto><texto> do escaninho, quando fecha a </texto><texto referencia_lexico="mesa">mesa</texto><texto>.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="fazer o pedido"><texto>Fazer O Pedido</texto></nome_simbolo>
+<sinonimos><sinonimo>faz o pedido.</sinonimo></sinonimos>
+<nocao><sentenca><texto>1 - Ação realiada pelo </texto><texto referencia_lexico="cliente">cliente</texto><texto>.  
+2 - O </texto><texto referencia_lexico="cliente">cliente</texto><texto> escolhe opções do </texto><texto referencia_lexico="restaurante">restaurante</texto><texto>.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>1 - O </texto><texto referencia_lexico="garcom">garçom</texto><texto> anota as opções do </texto><texto referencia_lexico="cliente">cliente</texto><texto> na </texto><texto referencia_lexico="comanda">comanda</texto><texto>.
+2 - O </texto><texto referencia_lexico="garcom">garçom</texto><texto> deve </texto><texto referencia_lexico="jogar a comanda">jogar a <a title="Léxico" href="main.php?t=l&id=3293">comanda</texto><texto></a>.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="fechar a mesa"><texto>Fechar A Mesa</texto></nome_simbolo>
+<sinonimos><sinonimo>fecha mesa,</sinonimo><sinonimo>fechou a mesa,</sinonimo><sinonimo>fecha a mesa.</sinonimo></sinonimos>
+<nocao><sentenca><texto>1 - Tarefa realizada pelo </texto><texto referencia_lexico="caixa">caixa</texto><texto>.
+2 - Acontece quando o </texto><texto referencia_lexico="cliente">cliente</texto> <texto referencia_lexico="pedir a conta">pede a conta.</texto><texto>
+3 - O </texto><texto referencia_lexico="caixa">caixa</texto><texto> verifica o </texto><texto referencia_lexico="num. da mesa">num. da <a title="Léxico" href="main.php?t=l&id=3333">mesa</texto><texto></a>.
+4 - O </texto><texto referencia_lexico="caixa">caixa</texto><texto> verifica se a </texto><texto referencia_lexico="mesa">mesa</texto><texto> esta aberta.
+5 - O </texto><texto referencia_lexico="caixa">caixa</texto> <texto referencia_lexico="retirar comandas do escaninho">retira as <a title="Léxico" href="main.php?t=l&id=3293">comandas</texto><texto></a> do </texto><texto referencia_lexico="escaninho">escaninho</texto><texto>.
+6 - O </texto><texto referencia_lexico="caixa">caixa</texto><texto> calcula a </texto><texto referencia_lexico="total">soma</texto><texto>.
+7 - O </texto><texto referencia_lexico="caixa">caixa</texto><texto> anota o </texto><texto referencia_lexico="total">total</texto><texto> no </texto><texto referencia_lexico="controle interno">controle interno</texto><texto>.
+8 - O </texto><texto referencia_lexico="caixa">caixa</texto><texto> granpeia a nota (ou </texto><texto referencia_lexico="controle interno">controle interno</texto><texto>) com as </texto><texto referencia_lexico="comanda">comandas</texto><texto>.
+9 - O </texto><texto referencia_lexico="caixa">caixa</texto><texto> carimba a nota com o </texto><texto referencia_lexico="num. do carimbo">num. do carimbo</texto><texto> corrente no </texto><texto referencia_lexico="bordero">bordero</texto><texto>.
+10 - O </texto><texto referencia_lexico="caixa">caixa</texto><texto> anota o </texto><texto referencia_lexico="num. da mesa">num. da <a title="Léxico" href="main.php?t=l&id=3333">mesa</texto><texto></a> e a quantidade de </texto><texto referencia_lexico="comanda">comandas</texto><texto> no </texto><texto referencia_lexico="bordero">bordero</texto><texto>.
+11 - O </texto><texto referencia_lexico="caixa">caixa</texto><texto> anota os </texto><texto referencia_lexico="10%">10%</texto><texto> no </texto><texto referencia_lexico="canhoto">canhoto</texto><texto>.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>1 - A </texto><texto referencia_lexico="mesa esta fechada"><a title="Léxico" href="main.php?t=l&id=3333">mesa</texto><texto> está fechada</a>.
+2 - O </texto><texto referencia_lexico="garcom">garçom</texto><texto> deve entregar o </texto><texto referencia_lexico="pagamento">pagamento</texto><texto> ao </texto><texto referencia_lexico="caixa">caixa</texto><texto>.
+3 - Se a </texto><texto referencia_lexico="mesa esta fechada"><a title="Léxico" href="main.php?t=l&id=3333">mesa</texto><texto> está fechada</a>, o </texto><texto referencia_lexico="caixa">caixa</texto><texto> não pode fechar a </texto><texto referencia_lexico="mesa">mesa</texto><texto>,
+</texto><texto referencia_lexico="caixa">caixa</texto><texto> diz para o </texto><texto referencia_lexico="garcom">garçom</texto><texto>: </texto><texto referencia_lexico="mesa esta fechada"><a title="Léxico" href="main.php?t=l&id=3333">mesa</texto><texto> está fechada</a>.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="jogar a comanda"><texto>Jogar A Comanda</texto></nome_simbolo>
+<sinonimos><sinonimo>recebe a comanda.</sinonimo><sinonimo>joga o comanda,</sinonimo></sinonimos>
+<nocao><sentenca><texto>1 - Tarefa realizada pelo </texto><texto referencia_lexico="garcom">garçom</texto><texto>.
+2 - O </texto><texto referencia_lexico="garcom">garçom</texto><texto> coloca a </texto><texto referencia_lexico="comanda">comanda</texto><texto> no balcão.
+3 - Acontece quando o </texto><texto referencia_lexico="cliente">cliente</texto><texto> faz o </texto><texto referencia_lexico="pedido">pedido</texto><texto>.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>1 - O </texto><texto referencia_lexico="caixa">caixa</texto><texto> deve </texto><texto referencia_lexico="botar a comanda no escaninho">botar a comanda no escaninho</texto><texto>.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="mesa"><texto>Mesa</texto></nome_simbolo>
+<sinonimos><sinonimo>mesas.</sinonimo></sinonimos>
+<nocao><sentenca><texto>1 - Um dos componentes do </texto><texto referencia_lexico="restaurante">restaurante</texto><texto>.
+2 - Cada mesa tem um </texto><texto referencia_lexico="num. da mesa">num. da mesa</texto><texto>.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>1 - O </texto><texto referencia_lexico="cliente">cliente</texto><texto> pode </texto><texto referencia_lexico="sentar a mesa">sentar a mesa</texto><texto>.
+2 - O </texto><texto referencia_lexico="cliente">cliente</texto><texto> pode </texto><texto referencia_lexico="trocar de mesa">trocar de mesa</texto><texto>.
+3 - A </texto><texto referencia_lexico="mesa esta aberta">mesa está aberta</texto><texto> ou </texto><texto referencia_lexico="mesa esta fechada">mesa está fechada</texto><texto>.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="mesa esta aberta"><texto>Mesa Está Aberta</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>1 - É uma </texto><texto referencia_lexico="mesa">mesa</texto><texto>.
+2 - A </texto><texto referencia_lexico="mesa">mesa</texto><texto> está aberta, se o </texto><texto referencia_lexico="caixa">caixa</texto><texto> abriu a </texto><texto referencia_lexico="mesa">mesa</texto><texto> e o </texto><texto referencia_lexico="caixa">caixa</texto><texto> ainda não </texto><texto referencia_lexico="fechar a mesa">fechou a <a title="Léxico" href="main.php?t=l&id=3333">mesa</texto><texto>,</a> nem </texto><texto referencia_lexico="transferir de mesa para mesa">transferiu a <a title="Léxico" href="main.php?t=l&id=3333">mesa</texto><texto>.</a>
+3 - A divisão do </texto><texto referencia_lexico="escaninho">escaninho</texto><texto> corresponde ao </texto><texto referencia_lexico="num. da mesa">num. da <a title="Léxico" href="main.php?t=l&id=3333">mesa</texto><texto></a> contém </texto><texto referencia_lexico="comanda">comandas</texto><texto> (não está vazia).
+4 - A </texto><texto referencia_lexico="mesa">mesa</texto><texto> tem </texto><texto referencia_lexico="cliente">clientes</texto><texto>.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>1 - O </texto><texto referencia_lexico="caixa">caixa</texto><texto> pode </texto><texto referencia_lexico="fechar a mesa">fechar a <a title="Léxico" href="main.php?t=l&id=3333">mesa</texto><texto></a>.
+2 - O </texto><texto referencia_lexico="caixa">caixa</texto><texto> pode </texto><texto referencia_lexico="transferir de mesa para mesa">transferir de <a title="Léxico" href="main.php?t=l&id=3333">mesa</texto><texto> para </texto><texto referencia_lexico="mesa">mesa</texto><texto></a>.
+3 - O </texto><texto referencia_lexico="caixa">caixa</texto><texto> não pode abrir a </texto><texto referencia_lexico="mesa">mesa</texto><texto>.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="mesa esta fechada"><texto>Mesa Está Fechada</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>1 - A </texto><texto referencia_lexico="mesa">mesa</texto><texto> está fechada, se o </texto><texto referencia_lexico="caixa">caixa</texto><texto> fechou a </texto><texto referencia_lexico="mesa">mesa</texto><texto> e ainda não abriu a </texto><texto referencia_lexico="mesa">mesa</texto><texto>.
+2 - A </texto><texto referencia_lexico="mesa">mesa</texto><texto> está fechada, se o </texto><texto referencia_lexico="caixa">caixa</texto><texto> transferiu a </texto><texto referencia_lexico="mesa">mesa</texto><texto> e ainda não abriu a </texto><texto referencia_lexico="mesa">mesa</texto><texto>.
+3 - A divisão do </texto><texto referencia_lexico="escaninho">escaninho</texto><texto> corresponde ao </texto><texto referencia_lexico="num. da mesa">num. da <a title="Léxico" href="main.php?t=l&id=3333">mesa</texto><texto></a> não contém </texto><texto referencia_lexico="comanda">comandas</texto><texto> (está vazia).</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>1 - O </texto><texto referencia_lexico="caixa">caixa</texto><texto> pode </texto><texto referencia_lexico="abrir a mesa.">abrir a mesa.</texto><texto>
+2 - O </texto><texto referencia_lexico="caixa">caixa</texto><texto> não pode </texto><texto referencia_lexico="fechar a mesa">fechar a mesa</texto><texto>.
+3 - O </texto><texto referencia_lexico="caixa">caixa</texto><texto> não pode </texto><texto referencia_lexico="transferir de mesa para mesa">transferir de mesa para mesa</texto><texto>.
+</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="num. da mesa"><texto>Num. Da Mesa</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>1 - número que identifica a </texto><texto referencia_lexico="mesa">mesa</texto><texto>.
+2 - número que identifica uma divisão do </texto><texto referencia_lexico="escaninho">escaninho</texto><texto>.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>1 - O </texto><texto referencia_lexico="garcom">garçom</texto><texto> anota o num. da </texto><texto referencia_lexico="mesa">mesa</texto><texto> na </texto><texto referencia_lexico="comanda">comanda</texto><texto>.
+2 - O </texto><texto referencia_lexico="caixa">caixa</texto><texto> verifica o num. da </texto><texto referencia_lexico="mesa">mesa</texto><texto> da </texto><texto referencia_lexico="comanda">comanda</texto><texto>.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="num. do carimbo"><texto>Num. Do Carimbo</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>1 - Identifica cada uma das linhas do </texto><texto referencia_lexico="bordero">bordero</texto><texto>.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>1 - O </texto><texto referencia_lexico="caixa">caixa</texto><texto> anota o num. do carimbo na nota, quando fecha a </texto><texto referencia_lexico="mesa">mesa</texto><texto>.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="opcao"><texto>Opção</texto></nome_simbolo>
+<sinonimos><sinonimo>opções.</sinonimo></sinonimos>
+<nocao><sentenca><texto>1 - É um dos pratos ou bebidas do </texto><texto referencia_lexico="restaurante">restaurante</texto><texto>.
+2 - Toda opção tem </texto><texto referencia_lexico="preco">preço</texto><texto>. </texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>1 - O </texto><texto referencia_lexico="cliente">cliente</texto><texto> escolhe opções, quando faz o </texto><texto referencia_lexico="pedido">pedido</texto><texto>.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="pagamento"><texto>Pagamento</texto></nome_simbolo>
+<sinonimos><sinonimo>dinheiro.</sinonimo></sinonimos>
+<nocao><sentenca><texto>1 - Dinheiro entregue pelo </texto><texto referencia_lexico="cliente">cliente</texto><texto>, quando o </texto><texto referencia_lexico="cliente">cliente</texto><texto> paga a </texto><texto referencia_lexico="conta">conta</texto><texto>.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>1 - O </texto><texto referencia_lexico="caixa">caixa</texto><texto> deve conferir o pagamento.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="pagar a conta"><texto>Pagar A Conta</texto></nome_simbolo>
+<sinonimos><sinonimo>paga a conta.</sinonimo><sinonimo>recebe pagamento,</sinonimo><sinonimo>receber o pagamento,</sinonimo></sinonimos>
+<nocao><sentenca><texto>1 - Ação realizada pelo </texto><texto referencia_lexico="cliente">cliente</texto><texto>.
+2 - O </texto><texto referencia_lexico="cliente">cliente</texto><texto> entrega o dinheiro ao garçon.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>1 - O </texto><texto referencia_lexico="garcom">garçom</texto><texto> deve entregar o </texto><texto referencia_lexico="pagamento">pagamento</texto><texto> ao </texto><texto referencia_lexico="caixa">caixa</texto><texto>.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="pedido"><texto>Pedido</texto></nome_simbolo>
+<sinonimos><sinonimo>pedidos.</sinonimo></sinonimos>
+<nocao><sentenca><texto>1 - É uma </texto><texto referencia_lexico="opcao">opção</texto><texto>.
+2 - Tem um </texto><texto referencia_lexico="cliente">cliente</texto><texto>.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>1 - O </texto><texto referencia_lexico="garcom">garçom</texto><texto> anota o pedido na </texto><texto referencia_lexico="comanda">comanda</texto><texto>, quando o </texto><texto referencia_lexico="cliente">cliente</texto><texto> faz o pedido.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="pedir a conta"><texto>Pedir A Conta</texto></nome_simbolo>
+<sinonimos><sinonimo>pedir a nota,</sinonimo><sinonimo>pede a conta.</sinonimo></sinonimos>
+<nocao><sentenca><texto>1 - Ação realizada pelo </texto><texto referencia_lexico="cliente">cliente</texto><texto>.
+2 - Acontece quando o </texto><texto referencia_lexico="cliente">cliente</texto><texto> não tem mais pedidos.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>1 - O </texto><texto referencia_lexico="caixa">caixa</texto><texto> deve </texto><texto referencia_lexico="fechar a mesa">fechar a mesa</texto><texto>.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="preco"><texto>Preço</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>1 - Valor associado a </texto><texto referencia_lexico="opcao">opção</texto><texto>.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>1 - O </texto><texto referencia_lexico="caixa">caixa</texto><texto> consulta preço quando calcula o </texto><texto referencia_lexico="total">total</texto><texto>.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="restaurante"><texto>Restaurante</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>1 - É um lugar onde trabalham </texto><texto referencia_lexico="garcom">garçons</texto><texto> e </texto><texto referencia_lexico="caixa">caixa</texto><texto>.
+2 - É um lugar onde são atendidos </texto><texto referencia_lexico="cliente">clientes</texto><texto>.
+3 - Tem opções para refeição.
+4 - Tem </texto><texto referencia_lexico="mesa">mesas.</texto><texto>
+5 - Tem </texto><texto referencia_lexico="escaninho">escaninho</texto><texto>.
+6 - Tem </texto><texto referencia_lexico="controle de caixa">controle de <a title="Léxico" href="main.php?t=l&id=3846">caixa</texto><texto></a>.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>1 - O restaurante pode ter 10%.
+2 - O restaurante pode não ter 10%.
+3 - O </texto><texto referencia_lexico="cliente">cliente</texto><texto> pode </texto><texto referencia_lexico="sentar a mesa">sentar a mesa</texto><texto> do restaurante.
+4 - O </texto><texto referencia_lexico="cliente">cliente</texto><texto> pode </texto><texto referencia_lexico="trocar de mesa">trocar de mesa</texto><texto> no restaurante.
+5 - O </texto><texto referencia_lexico="cliente">cliente</texto><texto> pode </texto><texto referencia_lexico="pedir a conta">pedir a conta</texto><texto> no restaurante.
+6 - O </texto><texto referencia_lexico="cliente">cliente</texto><texto> pode </texto><texto referencia_lexico="pagar a conta">pagar a conta</texto><texto> no restaurante.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="retirar comandas do escaninho"><texto>Retirar Comandas Do Escaninho</texto></nome_simbolo>
+<sinonimos><sinonimo>retirar as comandas,</sinonimo><sinonimo>retira as comandas</sinonimo></sinonimos>
+<nocao><sentenca><texto>1 - Tarefa realizada pelo </texto><texto referencia_lexico="caixa">caixa</texto><texto>.
+2 - O </texto><texto referencia_lexico="caixa">caixa</texto><texto> pega as </texto><texto referencia_lexico="comanda">comandas</texto><texto> da divisão do </texto><texto referencia_lexico="escaninho">escaninho</texto><texto> correspondente ao </texto><texto referencia_lexico="num. da mesa">num. da mesa</texto><texto>.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>1 - A divisão do </texto><texto referencia_lexico="escaninho">escaninho</texto><texto> está vazia.
+2 - O </texto><texto referencia_lexico="caixa">caixa</texto><texto> deve </texto><texto referencia_lexico="calcular o total">calcular o total</texto><texto>.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="sentar a mesa"><texto>Sentar A Mesa</texto></nome_simbolo>
+<sinonimos><sinonimo>senta a mesa</sinonimo></sinonimos>
+<nocao><sentenca><texto>1 - Ação realizada pelo freguês.
+2 - Acontece quando o freguês escolhe uma das mesas.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>1 - O freguês deve </texto><texto referencia_lexico="fazer o pedido">fazer o pedido</texto><texto> ao </texto><texto referencia_lexico="garcom">garçom</texto><texto>.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="transferir de mesa para mesa"><texto>Transferir De Mesa Para Mesa</texto></nome_simbolo>
+<sinonimos><sinonimo>transferiu a mesa.</sinonimo><sinonimo>transfere mesa,</sinonimo></sinonimos>
+<nocao><sentenca><texto>1 - Tarefa realizada pelo </texto><texto referencia_lexico="caixa">caixa</texto><texto>.
+2 - Acontece quando o freguês troca de </texto><texto referencia_lexico="mesa">mesa</texto><texto> (origem) para a </texto><texto referencia_lexico="mesa">mesa</texto><texto> (destino).
+3 - O </texto><texto referencia_lexico="caixa">caixa</texto><texto> verifica se a </texto><texto referencia_lexico="mesa esta fechada"><a title="Léxico" href="main.php?t=l&id=3333">mesa</texto><texto> está fechada</a>.
+4 - O </texto><texto referencia_lexico="caixa">caixa</texto><texto> transfere as </texto><texto referencia_lexico="comanda">comandas</texto><texto> da divisão do </texto><texto referencia_lexico="escaninho">escaninho</texto><texto> correspondente ao
+</texto><texto referencia_lexico="num. da mesa">num. da <a title="Léxico" href="main.php?t=l&id=3333">mesa</texto><texto></a> (origem) para a divisão do </texto><texto referencia_lexico="escaninho">escaninho</texto><texto> correspondente ao </texto><texto referencia_lexico="num. da mesa">num. da <a title="Léxico" href="main.php?t=l&id=3333">mesa</texto><texto></a> (destino).</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>1 - A divisão do </texto><texto referencia_lexico="escaninho">escaninho</texto><texto> correspondente ao </texto><texto referencia_lexico="num. da mesa">num. da mesa</texto><texto> (origem) está vazia.
+2 - A </texto><texto referencia_lexico="mesa esta fechada">mesa está fechada</texto><texto> (origem).
+3 - A divisão do </texto><texto referencia_lexico="escaninho">escaninho</texto><texto> correspondente ao </texto><texto referencia_lexico="num. da mesa">num. da mesa</texto><texto> (destino) recebe as </texto><texto referencia_lexico="comanda">comandas</texto><texto>.
+4 - A </texto><texto referencia_lexico="mesa esta aberta">mesa está aberta</texto><texto> (destino).  </texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="trocar de mesa"><texto>Trocar De Mesa</texto></nome_simbolo>
+<sinonimos><sinonimo>troca.</sinonimo></sinonimos>
+<nocao><sentenca><texto>1 - Ação realizada pelo </texto><texto referencia_lexico="cliente">cliente</texto><texto>.
+2 - Acontece quando o </texto><texto referencia_lexico="cliente">cliente</texto><texto> muda de uma </texto><texto referencia_lexico="mesa">mesa</texto><texto> para outra </texto><texto referencia_lexico="mesa">mesa</texto><texto>.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>1 - O </texto><texto referencia_lexico="caixa">caixa</texto><texto> deve </texto><texto referencia_lexico="transferir de mesa para mesa">transferir de mesa para mesa</texto><texto>.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="troco"><texto>Troco</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>1 - Troco = </texto><texto referencia_lexico="pagamento">pagamento</texto><texto> - </texto><texto referencia_lexico="total">total</texto><texto>.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>1 - O </texto><texto referencia_lexico="caixa">caixa</texto><texto> calcula o troco quando confere o </texto><texto referencia_lexico="pagamento">pagamento</texto><texto>.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="botar a comanda no escaninho"><texto>Botar A Comanda No Escaninho</texto></nome_simbolo>
+<sinonimos><sinonimo>botar a comanda,</sinonimo><sinonimo>bota a comanda no escaninho.</sinonimo></sinonimos>
+<nocao><sentenca><texto>1 - tarefa realizada pelo </texto><texto referencia_lexico="caixa">caixa</texto><texto>.
+2 - acontece quando o </texto><texto referencia_lexico="caixa">caixa</texto> <texto referencia_lexico="jogar a comanda">recebe a <a title="Léxico" href="main.php?t=l&id=3293">comanda</texto><texto>.</a>
+3 - o </texto><texto referencia_lexico="caixa">caixa</texto><texto> verifica o </texto><texto referencia_lexico="num. da mesa">num. da mesa</texto><texto> da </texto><texto referencia_lexico="comanda">comanda</texto><texto>.
+4 - o </texto><texto referencia_lexico="caixa">caixa</texto><texto> coloca a </texto><texto referencia_lexico="comanda">comanda</texto><texto> na divisão do </texto><texto referencia_lexico="escaninho">escaninho</texto><texto> correspondente ao </texto><texto referencia_lexico="num. da mesa">num. da mesa</texto><texto>.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>1 - Divisão do </texto><texto referencia_lexico="escaninho">escaninho</texto><texto> recebe nova </texto><texto referencia_lexico="comanda">comanda</texto><texto>.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="conferir pagamento."><texto>Conferir Pagamento.</texto></nome_simbolo>
+<sinonimos><sinonimo>conferir o pagamento,</sinonimo><sinonimo>confere,</sinonimo><sinonimo>confere o pagamento.</sinonimo></sinonimos>
+<nocao><sentenca><texto>1 - Tarefa realizada pelo </texto><texto referencia_lexico="caixa">caixa</texto><texto>.
+2 - O </texto><texto referencia_lexico="caixa">caixa</texto><texto> compara o </texto><texto referencia_lexico="pagamento">pagamento</texto><texto> com o </texto><texto referencia_lexico="total">total</texto><texto> da nota (ou </texto><texto referencia_lexico="controle interno">controle interno</texto><texto>).</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>1 - Se </texto><texto referencia_lexico="pagamento">pagamento</texto><texto> for maior ou igual ao </texto><texto referencia_lexico="total">total</texto><texto>,
+o </texto><texto referencia_lexico="caixa">caixa</texto><texto> deve </texto><texto referencia_lexico="entregar o troco">entregar o troco</texto><texto> e o </texto><texto referencia_lexico="canhoto">canhoto</texto><texto> para o </texto><texto referencia_lexico="garcom">garçom</texto><texto>.
+2 - Se </texto><texto referencia_lexico="pagamento">pagamento</texto><texto> for menor que </texto><texto referencia_lexico="total">total</texto><texto>,
+o </texto><texto referencia_lexico="caixa">caixa</texto><texto> diz ao </texto><texto referencia_lexico="garcom">garçom</texto><texto> que o </texto><texto referencia_lexico="pagamento">pagamento</texto><texto> está errado.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="cliente"><texto>Cliente</texto></nome_simbolo>
+<sinonimos><sinonimo>fregues</sinonimo><sinonimo>clientes</sinonimo></sinonimos>
+<nocao><sentenca><texto>1 - Pessoa que consome </texto><texto referencia_lexico="opcao">opção</texto><texto> do </texto><texto referencia_lexico="restaurante">restaurante</texto><texto>.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>1 - </texto><texto referencia_lexico="sentar a mesa">senta a <a title="Léxico" href="main.php?t=l&id=3333">mesa</texto><texto></a>, faz </texto><texto referencia_lexico="pedido">pedido</texto><texto>, troca de </texto><texto referencia_lexico="mesa">mesa</texto><texto>, pede </texto><texto referencia_lexico="conta">conta</texto><texto>, paga </texto><texto referencia_lexico="conta">conta</texto><texto>.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="caixa"><texto>Caixa</texto></nome_simbolo>
+<sinonimos><sinonimo>caixas</sinonimo></sinonimos>
+<nocao><sentenca><texto>1 - pessoa que trabalha no </texto><texto referencia_lexico="restaurante">restaurante</texto><texto> fazendo o controle das mesas.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>1 - realiza as tarefas: abrir a </texto><texto referencia_lexico="mesa">mesa</texto><texto>, </texto><texto referencia_lexico="botar a comanda no escaninho">botar a comanda no escaninho</texto><texto>,
+</texto><texto referencia_lexico="transferir de mesa para mesa">transferir de <a title="Léxico" href="main.php?t=l&id=3333">mesa</texto><texto> para </texto><texto referencia_lexico="mesa">mesa</texto><texto></a>, </texto><texto referencia_lexico="fechar a mesa">fechar a <a title="Léxico" href="main.php?t=l&id=3333">mesa</texto><texto></a>,
+</texto><texto referencia_lexico="retirar comandas do escaninho">retirar comandas do escaninho</texto><texto>, calcular o </texto><texto referencia_lexico="total">total</texto><texto>, conferir </texto><texto referencia_lexico="pagamento">pagamento</texto><texto>.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="conta"><texto>Conta</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Valor </texto><texto referencia_lexico="total">total</texto><texto> da despesa no </texto><texto referencia_lexico="restaurante">restaurante</texto><texto>.
+</texto><texto referencia_lexico="total">soma</texto><texto> das opções consumidas incluido os 10%.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>É conferido pelo </texto><texto referencia_lexico="caixa">caixa</texto><texto> e é pago pelo </texto><texto referencia_lexico="cliente">cliente</texto><texto>. </texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="garcom"><texto>Garçom</texto></nome_simbolo>
+<sinonimos><sinonimo>garçons</sinonimo></sinonimos>
+<nocao><sentenca><texto>1 - Pessoa que trabalha no </texto><texto referencia_lexico="restaurante">restaurante</texto><texto> servindo o </texto><texto referencia_lexico="cliente">cliente</texto><texto>.
+2 - Responsavel pela comunicação entre os </texto><texto referencia_lexico="cliente">clientes</texto><texto> e o </texto><texto referencia_lexico="caixa">caixa</texto><texto>.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>1 - Realiza as tarefas: </texto><texto referencia_lexico="jogar a comanda">jogar a comanda</texto><texto>, entregar o </texto><texto referencia_lexico="pagamento">pagamento</texto><texto>.</texto><PT/></sentenca></impacto>
+</lexico>
+</projeto>

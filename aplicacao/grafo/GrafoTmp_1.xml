@@ -1,0 +1,307 @@
+<?xml version='1.0' encoding='ISO-8859-1' ?>
+<?xml-stylesheet type='text/xsl' href='projeto.xsl'?>
+<projeto>
+<nome>Seguradora Imperial</nome>
+<lexico>
+<nome_simbolo id="acidentado"><texto>Acidentado</texto></nome_simbolo>
+<nocao><sentenca>- pessoa envolvida no acidente, podendo ser um terceiro ou o proprio cliente <PT/></sentenca></nocao>
+<impacto><sentenca>- solicita indenizacao
+<PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="custos"><texto>Custos</texto></nome_simbolo>
+<nocao><sentenca>- valores estimados no orcamento da oficina ou os valores estimados pelo medico em relacao a(s) vitima(s) <PT/></sentenca></nocao>
+<impacto><sentenca>- faz parte do calculo da indenizacao<PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="danos materiais"><texto>Danos Materiais</texto></nome_simbolo>
+<nocao><sentenca>- danos ocorridos com o veiculo assegurado<PT/></sentenca></nocao>
+<impacto><sentenca>- faz parte do calculo da indenizacao<PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="danos pessoais"><texto>Danos Pessoais</texto></nome_simbolo>
+<nocao><sentenca>- danos fisicos (lesoes) ocorridos com o segurado ou com terceiro envolvido no acidente <PT/></sentenca></nocao>
+<impacto><sentenca>- faz parte do calculo da indenizacao<PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="medico"><texto>Medico</texto></nome_simbolo>
+<nocao><sentenca>- profissional envolvido no processo de indenizacao de sinistro para avaliacao dos danos pessoais causados pelo acidente<PT/></sentenca></nocao>
+<impacto><sentenca>- examina o acidentado
+- informa danos fisicos do tratamento do acidentado<PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="orcamento"><texto>Orcamento</texto></nome_simbolo>
+<nocao><sentenca>- documento contendo a especificacao dos danos encontrados no veiculo assegurado e o valor referente aos reparos necessarios <PT/></sentenca></nocao>
+<impacto><sentenca>- usado pela seguradora para calculo do valor da indenizacao a ser paga ao segurado
+- verificada pelo agente da seguradora<PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="realizar entrevista"><texto>Realizar Entrevista</texto></nome_simbolo>
+<nocao><sentenca>- o agente conversa com o segurado, vitima, testemunha e policia para verificacao dos depoimentos sobre o acidente <PT/></sentenca></nocao>
+<impacto><sentenca>- avalia veracidade do acidente atraves de entrevistas<PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="programar entrevista"><texto>Programar Entrevista</texto></nome_simbolo>
+<nocao><sentenca>- o agente marca conversa com o segurado, vitima, testemunhas ou policia <PT/></sentenca></nocao>
+<impacto><sentenca>- agente deseja informacoes do acidente
+- agente emite decisao sobre a indenizacao em 35 dias <PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="realizar orcamento"><texto>Realizar Orcamento</texto></nome_simbolo>
+<nocao><sentenca>- oficina avalia os danos materiais encontrados no veiculo assegurado e atribui valores para reparo dos mesmos<PT/></sentenca></nocao>
+<impacto><sentenca>- oficina envia orcamento a seguradora<PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="segurado"><texto>Segurado</texto></nome_simbolo>
+<nocao><sentenca>- cliente que faz solicitacao de indenizacao<PT/></sentenca></nocao>
+<impacto><sentenca>- telefona para corretor
+- preenche solicitacao de indenizacao
+- inicia processo de indenizacao de acidente<PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="solicitacao de seguro"><texto>Solicitacao De Seguro</texto></nome_simbolo>
+<nocao><sentenca>- pedido de cobertura de acidente por uma apolice<PT/></sentenca></nocao>
+<impacto><sentenca>- da partida no processo de cobertura de acidente<PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="solicitar indenizacao"><texto>Solicitar Indenizacao</texto></nome_simbolo>
+<nocao><sentenca>- pedir a seguradora ressarcimento de danos pessoais ou danos materiais de acidente<PT/></sentenca></nocao>
+<impacto><sentenca>- corretor envia solicitacao de indenizacao do acidente a seguradora
+- utilizado devido a danos materiais ou danos pessoais<PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="terceiro"><texto>Terceiro</texto></nome_simbolo>
+<nocao><sentenca>- pessoa envolvida no acidente e que nao eh cliente <PT/></sentenca></nocao>
+<impacto><sentenca>- solicita indenizacao a seguradora
+- agente avalia orcamento de danos pessoais
+<PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="testemunha"><texto>Testemunha</texto></nome_simbolo>
+<nocao><sentenca>- pessoa que presenciou o acidente e que pode dar informacoes sobre o acidente<PT/></sentenca></nocao>
+<impacto><sentenca>- participa de entrevista com o agente<PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="apolice em dia"><texto>Apolice Em Dia</texto></nome_simbolo>
+<nocao><sentenca>- apolice esta com o pagamento do premio em dia
+<PT/></sentenca></nocao>
+<impacto><sentenca>- tem direito a cobertura em caso de acidente<PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="apolice atrasada"><texto>Apolice Atrasada</texto></nome_simbolo>
+<nocao><sentenca>- apolice esta com o pagamento do premio em debito
+<PT/></sentenca></nocao>
+<impacto><sentenca>- nao tem direito a cobertura em caso de acidente<PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="data do acidente"><texto>Data Do Acidente</texto></nome_simbolo>
+<nocao><sentenca>- dia no qual aconteceu o acidente de uma solicitacao de acidente
+- referencia para contagem do tempo de uma indenizacao <PT/></sentenca></nocao>
+<impacto><sentenca>- tem que ser confirmada pela solicitacao de indenizacao<PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="acidente com grande dano"><texto>Acidente Com Grande Dano</texto></nome_simbolo>
+<nocao><sentenca>- acidente com danos pessoais ou grandes danos materiais (acima de determinado valor)<PT/></sentenca></nocao>
+<impacto><sentenca>- deve ter processo de indenizacao rigoroso<PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="custo do acidente"><texto>Custo Do Acidente</texto></nome_simbolo>
+<nocao><sentenca>- valor do desembolso pela seguradora
+- calculado pelo valor da indenizacao acrescido do custo interno do processamento da indenizacao<PT/></sentenca></nocao>
+<impacto><sentenca>- eh considerado alto quando fica maior que 3.500 dolares<PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="segurado satisfeito"><texto>Segurado Satisfeito</texto></nome_simbolo>
+<nocao><sentenca>- segurado com processo de solicitacao de indenizacao do acidente resolvido nas condicoes que ele espera<PT/></sentenca></nocao>
+<impacto><sentenca>- segurado deve fazer renovacao da apolice<PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="oficina credenciada"><texto>Oficina Credenciada</texto></nome_simbolo>
+<nocao><sentenca>- oficina de preferencia da seguradora<PT/></sentenca></nocao>
+<impacto><sentenca>- resolve diretamente com o segurado acidente de pequeno dano
+- escolhida pela conveniencia do segurado
+- valoriza o cliente e deseja preserva-lo<PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="seguradora"><texto>Seguradora</texto></nome_simbolo>
+<nocao><sentenca>- companhia de seguros de automoveis<PT/></sentenca></nocao>
+<impacto><sentenca>- vende apolice de seguro ao cliente
+- responde aos processos de indenizacao de acidente
+- monitora estatistica periodica de preco e qualidade do reparo de danos materiais<PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="locadora"><texto>Locadora</texto></nome_simbolo>
+<nocao><sentenca>empresa de aluguel de automoveis que mantem contrato com a seguradora<PT/></sentenca></nocao>
+<impacto><sentenca>- fornece carro provisorio ao segurado pago pela seguradora<PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="tipo de indenizacao"><texto>Tipo De Indenizacao</texto></nome_simbolo>
+<nocao><sentenca>- modalidades de cobertura para indenizacao: danos pessoais ou danos materiais
+<PT/></sentenca></nocao>
+<impacto><sentenca>- afeta o calculo do desembolso da indenizacao<PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="apolice"><texto>Apolice</texto></nome_simbolo>
+<nocao><sentenca>- contrato para indenizacao de um cliente segurado em caso de acidente<PT/></sentenca></nocao>
+<impacto><sentenca>- cobre danos pessoais e danos materiais
+- pode estar com o pagamento do premio em dia (apolice em dia) ou com o pagamento do premio atrasado (apolice atrasada)<PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="indenizacao de acidente"><texto>Indenizacao De Acidente</texto></nome_simbolo>
+<nocao><sentenca>- processo composto pela solicitacao do segurado, verificacao do agente, avaliacao do agente e autorizacao da seguradora para pagamento da indenizacao pelo acidente<PT/></sentenca></nocao>
+<impacto><sentenca>- leva ate 35 dias para ser liberada
+- deve reduzir as despesas administrativas
+- deve ser rapidamente notificado pelo segurado
+- deve fornecer um carro provisorio de uma locadora<PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="cliente"><texto>Cliente</texto></nome_simbolo>
+<nocao><sentenca>- pessoa que compra apolice de seguro<PT/></sentenca></nocao>
+<impacto><sentenca>- preenche solicitacao de seguro
+- encaminha solicitacao de seguro
+- pede indenizacao em caso de acidente<PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="dano em acidente"><texto>Dano Em Acidente</texto></nome_simbolo>
+<nocao><sentenca>- danos materiais ou danos pessoais ocorridos em acidente<PT/></sentenca></nocao>
+<impacto><sentenca>- verificado pelo agente
+- indenizado pela seguradora <PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="acidente com pequeno dano"><texto>Acidente Com Pequeno Dano</texto></nome_simbolo>
+<nocao><sentenca>- acidente sem danos pessoais e pequenos danos materiais (abaixo de determinado valor)<PT/></sentenca></nocao>
+<impacto><sentenca>- deve ter a indenizacao de acidente agilizada
+- pode ser resolvido pela oficina<PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="avaliar custo"><texto>Avaliar Custo</texto></nome_simbolo>
+<nocao><sentenca>- agente designado para o caso avalia os custos estimados da(s) vitima(s) com o medico  e os custos estimados no orcamento do reparo do veiculo assegurado com a oficina <PT/></sentenca></nocao>
+<impacto><sentenca>- agente pode liberar a indenizacao <PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="designar agente"><texto>Designar Agente</texto></nome_simbolo>
+<nocao><sentenca>- seguradora indica um agente qualificado para o caso apos receber a notificacao do sinistro<PT/></sentenca></nocao>
+<impacto><sentenca>- agente de sinistro eh indicado para o caso
+- processo de indenizacao passa a ter um agente<PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="notificar seguradora"><texto>Notificar Seguradora</texto></nome_simbolo>
+<nocao><sentenca>- o corretor após receber do segurado a solicitacao de indenizacao, solicita a seguradora, atraves de telefone, e-mail, correio ou pessoalmente a indenizacao<PT/></sentenca></nocao>
+<impacto><sentenca>- seguradora recebe solicitacao de indenizacao<PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="pagar indenizacao"><texto>Pagar Indenizacao</texto></nome_simbolo>
+<nocao><sentenca>- acao realizada pela seguradora quando o cliente ou um terceiro tem direito a indenizacao <PT/></sentenca></nocao>
+<impacto><sentenca>- seguradora paga a indenizacao mediante a autorizacao do pagamento pelo agente
+- segurado ou terceiro recebe valor para cobrir os danos materiais e/ou danos pessoais causados pelo acidente   <PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="pagar premio"><texto>Pagar Premio</texto></nome_simbolo>
+<nocao><sentenca>- acao realizada (mensalmente) pelo segurado para ele ter direito a indenizacao de acidente<PT/></sentenca></nocao>
+<impacto><sentenca>- estar com o pagamento do premio em dia eh uma das premissas para a indenizacao <PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="verificar vencimento da apolice"><texto>Verificar Vencimento Da Apolice</texto></nome_simbolo>
+<nocao><sentenca>- o agente designado para o caso verifica se a apolice esta em dia <PT/></sentenca></nocao>
+<impacto><sentenca>- caso vencida o processo eh encerrado
+- caso contrario devera ser verificado quem foi o responsavel pelo acidente para que se identifique se a seguradora imperial eh quem pagara a indenizacao<PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="visitar local do acidente"><texto>Visitar Local Do Acidente</texto></nome_simbolo>
+<nocao><sentenca>- o agente designado para o caso vai ao local onde ocorreu o acidente para recolher informacoes<PT/></sentenca></nocao>
+<impacto><sentenca>- contribui para a verificacao da veracidade do acidente<PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="policia"><texto>Policia</texto></nome_simbolo>
+<nocao><sentenca>- profissional identificado como policial que podera dar informacoes sobre o acidente <PT/></sentenca></nocao>
+<impacto><sentenca>- faz registro policial do acidente
+- participa de entrevista<PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="carro provisorio"><texto>Carro Provisorio</texto></nome_simbolo>
+<nocao><sentenca>- automovel de uma locadora para substituir automovel do segurado durante indenizacao de acidente<PT/></sentenca></nocao>
+<impacto><sentenca>- entregue ao segurado pela locadora
+- produz aumento do custo da indenizacao<PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="pagamento de aluguel"><texto>Pagamento De Aluguel</texto></nome_simbolo>
+<nocao><sentenca>- valor pago pela seguradora a locadora devido ao aluguel de carro provisorio<PT/></sentenca></nocao>
+<impacto><sentenca>- corresponde ao periodo de indenizacao de acidente
+- feito logo apos a conclusao da indenizacao<PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="tratamento medico"><texto>Tratamento Medico</texto></nome_simbolo>
+<nocao><sentenca>- assistencia medica e hospitalar recebida pelo acidentado ou pelo terceiro<PT/></sentenca></nocao>
+<impacto><sentenca>- gera pagamento ao medico
+- eh considerado no calculo custo do acidente<PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="corretor"><texto>Corretor</texto></nome_simbolo>
+<nocao><sentenca>- vendedor de apolice <PT/></sentenca></nocao>
+<impacto><sentenca>- vende apolice de seguro
+- notifica, pelo segurado, a seguradora sobre o inicio de processo de indenizacao de sinistro<PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="veiculo assegurado"><texto>Veiculo Assegurado</texto></nome_simbolo>
+<nocao><sentenca>- automovel do segurado que pode ter o valor total ou parcialmente ressarcido em caso de acidente<PT/></sentenca></nocao>
+<impacto><sentenca>- paga premio 
+- recebe orcamento de danos materiais
+ <PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="oficina"><texto>Oficina</texto></nome_simbolo>
+<nocao><sentenca>- local onde o veiculo segurado eh levado para realizacao do orcamento e para reparo dos danos materiais<PT/></sentenca></nocao>
+<impacto><sentenca>- faz orcamento de danos materiais existentes no veiculo assegurado
+- envia orcamento para a seguradora
+- conserta danos materiais do automovel do segurado
+<PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="conserto"><texto>Conserto</texto></nome_simbolo>
+<nocao><sentenca>- reparo de danos materiais do automovel assegurado<PT/></sentenca></nocao>
+<impacto><sentenca>- executado por oficina
+- demanda reembolso da seguradora<PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="franquia"><texto>Franquia</texto></nome_simbolo>
+<nocao><sentenca>- valor pago pelo segurado em caso de sinistro<PT/></sentenca></nocao>
+<impacto><sentenca>- o valor eh usado pela seguradora para reduzir custos com indenizacao
+- valor minimo de um processo de indenizacao<PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="premio"><texto>Premio</texto></nome_simbolo>
+<nocao><sentenca>- valor do financiamento da apolice do seguro<PT/></sentenca></nocao>
+<impacto><sentenca>- pago mensalmente pelo segurado
+- pagamento atrasado perde direito a indenizacao<PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="acidente"><texto>Acidente</texto></nome_simbolo>
+<nocao><sentenca>- fato onde ocorrem danos pessoais com o cliente ou com terceiro e/ou danos materiais com o veiculo assegurado<PT/></sentenca></nocao>
+<impacto><sentenca>- eh comprovado atraves dos seguintes atributos: data do acidente e local do acidente
+- pode ser classificado como acidente com pequeno dano ou como acidente com grande dano<PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="solicitacao de indenizacao"><texto>Solicitacao De Indenizacao</texto></nome_simbolo>
+<nocao><sentenca>- documento preenchido pelo cliente e entregue ao corretor quando ocorre um acidente<PT/></sentenca></nocao>
+<impacto><sentenca>- enviado a seguradora pelo corretor para solicitacao de indenizacao do acidente
+- utilizado devido a danos materiais ou danos pessoais
+<PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="solidificar relacionamento"><texto>Solidificar Relacionamento</texto></nome_simbolo>
+<nocao><sentenca>- implementar relacionamento de confianca com o cliente segurado
+<PT/></sentenca></nocao>
+<impacto><sentenca>- segurado fica confiante e satisfeito com a seguradora<PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="evitar conflito"><texto>Evitar Conflito</texto></nome_simbolo>
+<nocao><sentenca>- evitar conflito judicial com cliente segurado<PT/></sentenca></nocao>
+<impacto><sentenca>- segurado fica confiante e satisfeito com a seguradora<PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="indenizacao"><texto>Indenizacao</texto></nome_simbolo>
+<nocao><sentenca>- valor pago pela seguradora por danos pessoais ou danos materiais em bens de uma apolice  <PT/></sentenca></nocao>
+<impacto><sentenca>- faz o ressarcimento do cliente segurado
+- eh influenciado no calculo pelo tipo de indenizacao<PT/></sentenca></impacto>
+</lexico>
+</projeto>

@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='ISO-8859-1' ?>
+<projeto>
+<nome>Padua - Agendador de Reuniões</nome>
+<cenario>
+<titulo id="fazer chamada para reuniao.">Fazer Chamada Para Reunião.</titulo>
+<objetivo><sentenca><texto>Disparar a convocação de uma reuniãoa</texto></sentenca><PT/></objetivo>
+<contexto><sentenca><texto>A convocação deverá ser feita em tempo hábil para completar a </texto><texto referencia_lexico="negociacao">negociação</texto><texto> entre os participantes.</texto></sentenca><PT/></contexto>
+<atores><sentenca><texto>secretária, participantes.</texto></sentenca><PT/></atores>
+<recursos><sentenca><texto>Lista de participantes, data prevista, periodo de tempo previsto, participantes importantes.</texto></sentenca><PT/></recursos>
+<episodios><sentenca><texto>Fazer a convocação da </texto><texto referencia_lexico="reuniao">reunião</texto><texto> para todos os participantes da lista de participantes.</texto></sentenca><PT/></episodios>
+<excecao><sentenca><texto>A convocação pode ser feita pelo iniciador da </texto><texto referencia_lexico="reuniao">reunião</texto><texto> ou pela secretária que o representa.</texto></sentenca><PT/></excecao>
+</cenario>
+<cenario>
+<titulo id="lembrar participantes.">Lembrar Participantes.</titulo>
+<objetivo><sentenca><texto>Lembrar os participantes sobre a </texto><texto referencia_lexico="reuniao">reunião</texto><texto> agendada.rn</texto></sentenca><PT/></objetivo>
+<contexto><sentenca><texto>Deve acontecer com antecedenia entre 24 e 48 horas da </texto><texto referencia_lexico="reuniao">reunião</texto><texto> agendada.</texto></sentenca><PT/></contexto>
+<atores><sentenca><texto>secretária e participantes.</texto></sentenca><PT/></atores>
+<recursos><sentenca><texto>não há.</texto></sentenca><PT/></recursos>
+<episodios><sentenca><texto>não há.</texto></sentenca><PT/></episodios>
+<excecao><sentenca><texto>O episódio não acontecerá se não houver a antecedenia entre 24 e 48 horas da </texto><texto referencia_lexico="reuniao">reunião</texto><texto> agendada.</texto></sentenca><PT/></excecao>
+</cenario>
+<cenario>
+<titulo id="retornar chamada da reuniao.">Retornar Chamada Da Reunião.</titulo>
+<objetivo><sentenca><texto>Fornecimento da notificaçã de presençaa com informações sobre conjunt de exclusãoa e conjunto de preferencias do participantea</texto></sentenca><PT/></objetivo>
+<contexto><sentenca><texto>Deve acontecer em tempo hábil para a </texto><texto referencia_lexico="negociacao">negociação</texto><texto> da reuniãoa</texto></sentenca><PT/></contexto>
+<atores><sentenca><texto referencia_lexico="participante">participante</texto><texto> e secretaria.</texto></sentenca><PT/></atores>
+<recursos><sentenca><texto>Não há.</texto></sentenca><PT/></recursos>
+<episodios><sentenca><texto>Não há.</texto></sentenca><PT/></episodios>
+<excecao><sentenca><texto>Não há.</texto></sentenca><PT/></excecao>
+</cenario>
+<cenario>
+<titulo id="requisitar sala de reuniao.">Requisitar Sala De Reunião.</titulo>
+<objetivo><sentenca><texto>Fazer a reserva da sala de reuniãoa</texto></sentenca><PT/></objetivo>
+<contexto><sentenca><texto>Deve ser feito antes do processo de negociaçãoa</texto></sentenca><PT/></contexto>
+<atores><sentenca><texto>secretaria</texto></sentenca><PT/></atores>
+<recursos><sentenca><texto>sala de </texto><texto referencia_lexico="reuniao">reunião</texto></sentenca><PT/></recursos>
+<episodios><sentenca><texto>Não há.</texto></sentenca><PT/></episodios>
+<excecao><sentenca><texto>Pode não haver sala disponivel na data da reuniãoa</texto></sentenca><PT/></excecao>
+</cenario>
+<cenario>
+<titulo id="requisitar equipamento necessario.">Requisitar Equipamento Necessario.</titulo>
+<objetivo><sentenca><texto>Fazer a reserva do equipamento para a data da reuniãoa</texto></sentenca><PT/></objetivo>
+<contexto><sentenca><texto>Deve acontecer em tempo habil, depois da </texto><texto referencia_lexico="negociacao">negociação</texto><texto> da reuniãoa</texto></sentenca><PT/></contexto>
+<atores><sentenca><texto>secretaria</texto></sentenca><PT/></atores>
+<recursos><sentenca><texto>equipamento </texto></sentenca><PT/></recursos>
+<episodios><sentenca><texto>Não há.</texto></sentenca><PT/></episodios>
+<excecao><sentenca><texto>Pode não ter o equipamento necessário para a data da reuniãoa</texto></sentenca><PT/></excecao>
+</cenario>
+<cenario>
+<titulo id="comunicar data da reuniao.">Comunicar Data Da Reunião.</titulo>
+<objetivo><sentenca><texto>Comunicar aos participantes a data da </texto><texto referencia_lexico="reuniao">reunião</texto><texto> acertada pelo processo de negociaçãoa</texto></sentenca><PT/></objetivo>
+<contexto><sentenca><texto>Deve ser feito em tempo hábil para atender o deslocamento do participantea</texto></sentenca><PT/></contexto>
+<atores><sentenca><texto>secretaria, participantes.</texto></sentenca><PT/></atores>
+<recursos><sentenca><texto>lista de participantes, data da reuniãoa equipamento, sala da reuniãoa </texto></sentenca><PT/></recursos>
+<episodios><sentenca><texto>Não há.</texto></sentenca><PT/></episodios>
+<excecao><sentenca><texto>Não há.</texto></sentenca><PT/></excecao>
+</cenario>
+<cenario>
+<titulo id="organizar uma reuniao">Organizar Uma Reunião</titulo>
+<objetivo><sentenca><texto>Agendar com os participantes uma reuniãoa que satisfaça as preferências de </texto><texto referencia_lexico="local">local</texto><texto> e data.</texto></sentenca><PT/></objetivo>
+<contexto><sentenca><texto>A </texto><texto referencia_lexico="negociacao">negociação</texto><texto> da </texto><texto referencia_lexico="reuniao">reunião</texto><texto> deve acontecer em tempo hábil.</texto></sentenca><PT/></contexto>
+<atores><sentenca><texto>iniciado da reuniãoaa participantes, secretária.</texto></sentenca><PT/></atores>
+<recursos><sentenca><texto>dat propostaa, locala equipamentos</texto></sentenca><PT/></recursos>
+<episodios><sentenca><texto>- Iniciador informa a lista de participantes potenciais, os participantes importantes, o interval de datasa, a dat propostaa, o </texto><texto referencia_lexico="local">local</texto><texto> proposto, o periodo de tempo e os equipamentos necessarios. - O iniciador, ou o representante deste, pode ser a secretária do iniciador, faz a </texto><texto referencia_lexico="chamada">chamada</texto><texto> da </texto><texto referencia_lexico="reuniao">reunião</texto><texto> aos participantes. RESTRIÇÃO a </texto><texto referencia_lexico="chamada">chamada</texto><texto> deve ser feita em tempo hábil. - Secretária recebe as notificações de presença do participantea - Secretaria</texto></sentenca><PT/></episodios>
+<excecao><sentenca></sentenca><PT/></excecao>
+</cenario>
+<lexico>
+<nome_simbolo id="notificacao de presenca"><texto>Notificação De Presença</texto></nome_simbolo>
+<sinonimos><sinonimo>retorno chamada</sinonimo></sinonimos>
+<nocao><sentenca><texto>Retorno </texto><texto referencia_lexico="chamada">chamada</texto><texto> com informações sobre </texto><texto referencia_lexico="conjunto de exclusao">conjunto de exclusão</texto><texto> e conjunto de preferencias do </texto><texto referencia_lexico="participante">participante</texto><texto>.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto referencia_lexico="conjunto de exclusao">conjunto de exclusão</texto><texto> afeta a data prevista.
+Conjunto de preferencias afeta a data prevista.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="negociacao"><texto>Negociação</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Processo para definição da data da </texto><texto referencia_lexico="reuniao">reunião</texto><texto> e do </texto><texto referencia_lexico="local">local</texto><texto> da </texto><texto referencia_lexico="reuniao">reunião</texto><texto>.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>Define a data da </texto><texto referencia_lexico="reuniao">reunião</texto><texto>.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="reuniao"><texto>Reunião</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Encontro de participantes em um </texto><texto referencia_lexico="local">local</texto><texto> com data pré-escolhida em comum acordo.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>Impacto: Alteração no </texto><texto referencia_lexico="local">local</texto><texto> ou na data provocará o inicio das negociações da reunião. </texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="participante"><texto>Participante</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Pessoa convidada para participar da </texto><texto referencia_lexico="reuniao">reunião</texto><texto>.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>Um participante pode ser um </texto><texto referencia_lexico="participante importante">participante importante</texto><texto> para a </texto><texto referencia_lexico="reuniao">reunião</texto><texto>.
+Um participante pode ser o </texto><texto referencia_lexico="iniciador da reuniao">iniciador da <a title="Léxico" href="main.php?t=l&id=674">reunião</texto><texto></a>.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="participante importante"><texto>Participante Importante</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Pessoa a ser convidada para a </texto><texto referencia_lexico="reuniao">reunião</texto><texto>.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>Deve fazer a confirmação da presença na </texto><texto referencia_lexico="reuniao">reunião</texto><texto>. Pode informar as preferencias pessoais de </texto><texto referencia_lexico="local">local</texto><texto>. 
+
+</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="potenciais participantes"><texto>Potenciais Participantes</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Pessoas que devem ser convidadas para a </texto><texto referencia_lexico="reuniao">reunião</texto><texto>.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>Podem ser participantes importantes.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="local"><texto>Local</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Lugar onde será realizada uma </texto><texto referencia_lexico="reuniao">reunião</texto><texto>.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>Deve ser sugerido pelo </texto><texto referencia_lexico="iniciador da reuniao">iniciador da reunião</texto><texto>. Será escolhido pelos participantes importantes. 
+
+</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="intervalo de datas"><texto>Intervalo De Datas</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto referencia_lexico="conjunto de exclusao">conjunto de exclusão</texto><texto> e conjunto de preferências</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>Alteração no </texto><texto referencia_lexico="conjunto de exclusao">conjunto de exclusão</texto><texto> ou no conjunto de preferencias provoca alteração no intervalo de datas. </texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="iniciador da reuniao"><texto>Iniciador Da Reunião</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Pessoa que faz a </texto><texto referencia_lexico="chamada">chamada</texto><texto> de uma </texto><texto referencia_lexico="reuniao">reunião</texto><texto>.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>Pode ser um </texto><texto referencia_lexico="participante">participante</texto><texto>.
+Pode representar um </texto><texto referencia_lexico="participante">participante</texto><texto>.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="data proposta"><texto>Data Proposta</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Data informada pelo iniciador como sugestão inicial para uma </texto><texto referencia_lexico="reuniao">reunião</texto><texto>.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>Pode ser alterada pela </texto><texto referencia_lexico="negociacao">negociação</texto><texto>. Se tornará na data da </texto><texto referencia_lexico="reuniao">reunião</texto><texto>.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="data de reuniao 
+"><texto>Data De Reunião 
+</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Definida por data e periodo de tempo da </texto><texto referencia_lexico="reuniao">reunião</texto><texto>.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>Não pode ser alterada apos a </texto><texto referencia_lexico="negociacao">negociação</texto><texto>.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="conjunto de preferencia"><texto>Conjunto De Preferência</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Conjunto de datas em que os participantes poderiam estar presentes.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>Alteração no conjunto de preferência pode gerar alteração no </texto><texto referencia_lexico="intervalo de datas">intervalo de datas</texto><texto>.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="conjunto de exclusao"><texto>Conjunto De Exclusão</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Conjunto de datas em que os participantes não poderão estar presentes.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>Alteração no conjunto de exclusão pode gerar alteração no </texto><texto referencia_lexico="intervalo de datas">intervalo de datas</texto><texto>.</texto><PT/></sentenca></impacto>
+</lexico>
+<lexico>
+<nome_simbolo id="chamada"><texto>Chamada</texto></nome_simbolo>
+<sinonimos></sinonimos>
+<nocao><sentenca><texto>Pedido de convocação de uma </texto><texto referencia_lexico="reuniao">reunião</texto><texto>.</texto><PT/></sentenca></nocao>
+<impacto><sentenca><texto>Indica os </texto><texto referencia_lexico="potenciais participantes">potenciais participantes</texto><texto>.
+Indica os participantes importantes.  
+
+</texto><PT/></sentenca></impacto>
+</lexico>
+</projeto>
